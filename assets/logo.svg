@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" fill="none">
+  <defs>
+    <linearGradient id="neonGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7fff5a"/>
+      <stop offset="50%" stop-color="#39ff14"/>
+      <stop offset="100%" stop-color="#00cc44"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffec80"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#8a6a10"/>
+    </linearGradient>
+    <radialGradient id="ballBlack" cx="35%" cy="35%">
+      <stop offset="0%" stop-color="#666"/>
+      <stop offset="40%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#000"/>
+    </radialGradient>
+    <radialGradient id="ballRed" cx="35%" cy="35%">
+      <stop offset="0%" stop-color="#ff5050"/>
+      <stop offset="100%" stop-color="#7a1010"/>
+    </radialGradient>
+    <radialGradient id="ballOrange" cx="35%" cy="35%">
+      <stop offset="0%" stop-color="#ffc070"/>
+      <stop offset="100%" stop-color="#aa5010"/>
+    </radialGradient>
+    <radialGradient id="ballPink" cx="35%" cy="35%">
+      <stop offset="0%" stop-color="#ff90b0"/>
+      <stop offset="100%" stop-color="#aa3060"/>
+    </radialGradient>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a3018"/>
+      <stop offset="100%" stop-color="#000"/>
+    </radialGradient>
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Dark background with particles -->
+  <rect width="600" height="300" fill="url(#bg)"/>
+
+  <!-- Particles -->
+  <g opacity="0.7">
+    <circle cx="50" cy="40" r="2" fill="#39ff14"/>
+    <circle cx="120" cy="80" r="1.5" fill="#39ff14"/>
+    <circle cx="80" cy="200" r="2" fill="#39ff14"/>
+    <circle cx="500" cy="60" r="1.5" fill="#39ff14"/>
+    <circle cx="560" cy="220" r="2" fill="#39ff14"/>
+    <circle cx="20" cy="270" r="1" fill="#7fff5a"/>
+    <circle cx="450" cy="30" r="2" fill="#7fff5a"/>
+    <circle cx="540" cy="160" r="1" fill="#7fff5a"/>
+    <circle cx="40" cy="120" r="1" fill="#7fff5a"/>
+    <circle cx="200" cy="20" r="1.5" fill="#39ff14"/>
+    <circle cx="380" cy="280" r="1.5" fill="#39ff14"/>
+  </g>
+
+  <!-- Outer glow rectangle -->
+  <rect x="60" y="40" width="480" height="220" rx="8" fill="none" stroke="#39ff14" stroke-width="3" filter="url(#strongGlow)" opacity="0.5"/>
+
+  <!-- Main neon frame -->
+  <rect x="60" y="40" width="480" height="220" rx="8" fill="none" stroke="url(#neonGreen)" stroke-width="3" filter="url(#neonGlow)"/>
+
+  <!-- Inner frame -->
+  <rect x="68" y="48" width="464" height="204" rx="6" fill="none" stroke="#39ff14" stroke-width="1" opacity="0.6"/>
+
+  <!-- 8-ball character on top -->
+  <g transform="translate(260, 30)">
+    <!-- arms -->
+    <path d="M -50 30 Q -30 25 -10 28 Q 0 30 10 28 Q 30 25 50 30 L 50 40 Q 30 38 10 38 Q 0 40 -10 38 Q -30 38 -50 40 Z" fill="url(#ballBlack)" stroke="#39ff14" stroke-width="0.8"/>
+    <!-- Head with 8 -->
+    <circle cx="0" cy="20" r="22" fill="url(#ballBlack)" stroke="#39ff14" stroke-width="1.5"/>
+    <circle cx="-7" cy="13" r="6" fill="rgba(255,255,255,0.2)"/>
+    <circle cx="0" cy="20" r="9" fill="#fff"/>
+    <text x="0" y="24" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="10" fill="#000">8</text>
+  </g>
+
+  <!-- POOL BAR text - main title -->
+  <g filter="url(#neonGlow)">
+    <text x="300" y="155" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-weight="900" font-size="64" fill="url(#neonGreen)" letter-spacing="3">POOL BAR</text>
+  </g>
+  <text x="300" y="155" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-weight="900" font-size="64" fill="none" stroke="#fff" stroke-width="0.5" letter-spacing="3" opacity="0.8">POOL BAR</text>
+
+  <!-- BILLIARD & BOWLING -->
+  <text x="300" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="20" fill="#fff" letter-spacing="6">BILLIARD &amp; BOWLING</text>
+
+  <!-- Decorative underline -->
+  <line x1="120" y1="205" x2="480" y2="205" stroke="url(#neonGreen)" stroke-width="2" filter="url(#neonGlow)"/>
+
+  <!-- Pool balls bottom left -->
+  <g transform="translate(110, 225)">
+    <circle cx="0" cy="0" r="16" fill="url(#ballOrange)"/>
+    <circle cx="-4" cy="-4" r="5" fill="rgba(255,255,255,0.4)"/>
+    <circle cx="0" cy="0" r="8" fill="#fff"/>
+    <text x="0" y="4" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="10" fill="#000">5</text>
+  </g>
+  <g transform="translate(140, 232)">
+    <circle cx="0" cy="0" r="16" fill="url(#ballRed)"/>
+    <circle cx="-4" cy="-4" r="5" fill="rgba(255,255,255,0.4)"/>
+    <circle cx="0" cy="0" r="8" fill="#fff"/>
+    <text x="0" y="4" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="10" fill="#000">3</text>
+  </g>
+
+  <!-- Bowling pins bottom right -->
+  <g transform="translate(440, 220)">
+    <!-- pin 1 -->
+    <path d="M -8 -20 Q -8 -25 0 -25 Q 8 -25 8 -20 Q 8 -10 5 -5 L 5 15 Q 5 20 0 20 Q -5 20 -5 15 L -5 -5 Q -8 -10 -8 -20 Z" fill="#fff"/>
+    <path d="M -8 -20 Q -8 -25 0 -25 Q 8 -25 8 -20 Q 8 -10 5 -5 L 5 15 Q 5 20 0 20 Q -5 20 -5 15 L -5 -5 Q -8 -10 -8 -20 Z" fill="none" stroke="#aaa" stroke-width="0.5"/>
+    <rect x="-7" y="-17" width="14" height="3" fill="#ff2020"/>
+    <rect x="-7" y="-12" width="14" height="3" fill="#ff2020"/>
+  </g>
+  <g transform="translate(465, 215)">
+    <path d="M -8 -20 Q -8 -25 0 -25 Q 8 -25 8 -20 Q 8 -10 5 -5 L 5 15 Q 5 20 0 20 Q -5 20 -5 15 L -5 -5 Q -8 -10 -8 -20 Z" fill="#fff"/>
+    <rect x="-7" y="-17" width="14" height="3" fill="#ff2020"/>
+    <rect x="-7" y="-12" width="14" height="3" fill="#ff2020"/>
+  </g>
+  <g transform="translate(490, 220)">
+    <path d="M -8 -20 Q -8 -25 0 -25 Q 8 -25 8 -20 Q 8 -10 5 -5 L 5 15 Q 5 20 0 20 Q -5 20 -5 15 L -5 -5 Q -8 -10 -8 -20 Z" fill="#fff"/>
+    <rect x="-7" y="-17" width="14" height="3" fill="#ff2020"/>
+    <rect x="-7" y="-12" width="14" height="3" fill="#ff2020"/>
+  </g>
+  <!-- Bowling ball -->
+  <circle cx="410" cy="235" r="14" fill="url(#ballOrange)"/>
+  <circle cx="406" cy="231" r="4" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="405" cy="232" r="1.5" fill="#000"/>
+  <circle cx="411" cy="231" r="1.5" fill="#000"/>
+  <circle cx="408" cy="237" r="1.5" fill="#000"/>
+</svg>

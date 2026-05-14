@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>פול בר | ציוד סנוקר וביליארד מקצועי - זכיין רשמי STAR</title>
+  <title>פול בר | POOL BAR - ציוד סנוקר וביליארד יוקרתי | זכיין STAR</title>
   <meta name="description" content="פול בר - 25 שנות מצוינות בעולם הסנוקר. זכיין רשמי של חברת STAR למכירת שולחנות סנוקר, מקלות, כדורים וציוד מקצועי. מועדוני סנוקר בחדרה ובנימינה." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,17 +15,14 @@
   <!-- Preloader -->
   <div class="preloader" id="preloader">
     <div class="preloader-ball"></div>
+    <div class="preloader-text">POOL BAR</div>
   </div>
 
   <!-- Navigation -->
   <nav class="nav" id="nav">
     <div class="container nav-inner">
       <a href="index.html" class="brand">
-        <span class="brand-ball"></span>
-        <span class="brand-text">
-          פול בר
-          <small>POOL BAR · STAR</small>
-        </span>
+        <img src="assets/logo.svg" alt="פול בר" class="brand-logo" />
       </a>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -37,53 +34,81 @@
         <li><a href="tables.html">שולחנות</a></li>
         <li><a href="shop.html">חנות ציוד</a></li>
         <li><a href="gallery.html">גלריה</a></li>
-        <li><a href="contact.html" class="nav-cta">צור קשר</a></li>
+        <li><a href="contact.html" class="nav-cta">קבל הצעה</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- HERO with LOGO -->
   <header class="hero">
-    <div class="container hero-grid">
-      <div class="hero-text reveal">
-        <span class="hero-eyebrow">זכיין רשמי STAR · מאז 2000</span>
-        <h1 class="hero-title">
-          ממלכת
-          <span>הסנוקר</span>
-          של ישראל
-        </h1>
-        <p class="hero-sub">
-          25 שנות מצוינות, אהבה ומקצועיות. פול בר היא הכתובת המובילה בארץ לציוד סנוקר וביליארד ברמה הגבוהה בעולם — שולחנות, מקלות, כדורים, גירים והכל ביניהם. ישירות מהמותג הבינלאומי STAR (Xingpai).
-        </p>
-        <div class="hero-actions">
-          <a href="tables.html" class="btn btn-primary">
-            לקטלוג השולחנות
-            <span class="btn-arrow">←</span>
-          </a>
-          <a href="clubs.html" class="btn btn-outline">המועדונים שלנו</a>
+    <div class="particles" id="particles"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-logo-display">
+          <img src="assets/logo.svg" alt="פול בר - POOL BAR BILLIARD & BOWLING" class="hero-logo" />
         </div>
-        <div class="hero-stats">
-          <div class="stat"><strong data-counter="25">25</strong><span>שנות ניסיון</span></div>
-          <div class="stat"><strong data-counter="2">2</strong><span>מועדוני סנוקר</span></div>
-          <div class="stat"><strong data-counter="500">500+</strong><span>לקוחות מרוצים</span></div>
-          <div class="stat"><strong data-counter="100">100%</strong><span>ציוד מקורי</span></div>
+        <div>
+          <span class="hero-eyebrow">זכיין רשמי STAR · מאז 2000</span>
+          <h1 class="hero-title">איכות פרימיום. <span>משחק מקצועי.</span></h1>
+          <p class="hero-sub">
+            25 שנות מצוינות, אהבה ומקצועיות. <strong style="color: var(--white);">פול בר</strong> היא הכתובת המובילה בארץ לציוד סנוקר וביליארד ברמה הגבוהה בעולם — שולחנות, מקלות, כדורים, גירים והכל ביניהם. ישירות מהמותג הבינלאומי <strong style="color: var(--neon-green);">STAR Xingpai</strong>.
+          </p>
+          <div class="hero-actions">
+            <a href="tables.html" class="btn btn-primary">
+              לקטלוג השולחנות
+              <span class="btn-arrow">←</span>
+            </a>
+            <a href="contact.html" class="btn btn-outline">קבל הצעה אישית</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong data-counter="25">25</strong><span>שנות ניסיון</span></div>
+            <div class="stat"><strong data-counter="2">2</strong><span>מועדוני סנוקר</span></div>
+            <div class="stat"><strong data-counter="500">500+</strong><span>לקוחות מרוצים</span></div>
+            <div class="stat"><strong data-counter="100">100%</strong><span>ציוד מקורי</span></div>
+          </div>
         </div>
-      </div>
-
-      <div class="hero-visual">
-        <div class="particles" id="particles"></div>
-        <div class="orbit-balls">
-          <span class="b b1"></span>
-          <span class="b b2"></span>
-          <span class="b b3"></span>
-          <span class="b b4"></span>
-        </div>
-        <div class="eight-ball-3d"></div>
-        <div class="pool-table-mini"></div>
       </div>
     </div>
     <div class="scroll-indicator">SCROLL</div>
   </header>
+
+  <!-- Features Bar -->
+  <section style="padding: 2rem 0;">
+    <div class="container">
+      <div class="features-bar reveal">
+        <div class="features-bar-item">
+          <div class="features-bar-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 22h20L12 2z"/><line x1="12" y1="9" x2="12" y2="14"/></svg>
+          </div>
+          <div><h4>איכות פרימיום</h4><p>רק החומרים הטובים ביותר</p></div>
+        </div>
+        <div class="features-bar-item">
+          <div class="features-bar-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div><h4>זכיין רשמי STAR</h4><p>בלעדי בישראל</p></div>
+        </div>
+        <div class="features-bar-item">
+          <div class="features-bar-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div><h4>משלוח והתקנה</h4><p>בכל הארץ</p></div>
+        </div>
+        <div class="features-bar-item">
+          <div class="features-bar-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+          </div>
+          <div><h4>ייעוץ מקצועי</h4><p>שירות אישי</p></div>
+        </div>
+        <div class="features-bar-item">
+          <div class="features-bar-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15 8 22 9 17 14 18 21 12 18 6 21 7 14 2 9 9 8 12 2"/></svg>
+          </div>
+          <div><h4>אחריות מלאה</h4><p>10 שנים על שולחנות</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Marquee -->
   <div class="marquee">
@@ -103,80 +128,222 @@
     </div>
   </div>
 
-  <!-- Categories / What we offer -->
-  <section>
+  <!-- Categories - With REAL product visuals -->
+  <section class="section-felt">
     <div class="container">
       <div class="section-header reveal">
         <span class="eyebrow">מה אנחנו מציעים</span>
-        <h2>הכל למשחק המושלם</h2>
-        <p>מציוד מקצועי לליגות עולמיות ועד משחק אחר הצהריים עם החברים — אצלנו תמצאו את הציוד המתאים בדיוק.</p>
+        <h2>הכל ל<span class="text-neon">משחק המושלם</span></h2>
+        <p>מציוד מקצועי לליגות עולמיות ועד משחק אחר הצהריים — אצלנו תמצאו את הציוד המתאים בדיוק.</p>
       </div>
 
-      <div class="cards-grid reveal-stagger">
-        <div class="card">
-          <div class="card-icon">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="20" height="10" rx="2"/><circle cx="7" cy="14" r="1.5"/><circle cx="17" cy="14" r="1.5"/></svg>
+      <div class="cards-grid reveal-stagger" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <!-- Snooker Table -->
+        <div class="product-card">
+          <div class="product-image">
+            <svg width="100%" height="100%" viewBox="0 0 320 240" preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <radialGradient id="feltA" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="#1a7a4f"/><stop offset="100%" stop-color="#0a4d2a"/></radialGradient>
+                <linearGradient id="woodA" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#8a5a30"/><stop offset="50%" stop-color="#5a3a18"/><stop offset="100%" stop-color="#2a1810"/></linearGradient>
+                <radialGradient id="redA" cx="35%" cy="35%"><stop offset="0%" stop-color="#ff8080"/><stop offset="100%" stop-color="#7a1010"/></radialGradient>
+              </defs>
+              <ellipse cx="160" cy="210" rx="140" ry="12" fill="#39ff14" opacity="0.35"/>
+              <rect x="20" y="55" width="280" height="135" rx="10" fill="url(#woodA)" stroke="#d4af37" stroke-width="1" stroke-opacity="0.4"/>
+              <rect x="38" y="73" width="244" height="99" rx="5" fill="url(#feltA)"/>
+              <circle cx="48" cy="83" r="6" fill="#000"/>
+              <circle cx="160" cy="83" r="6" fill="#000"/>
+              <circle cx="272" cy="83" r="6" fill="#000"/>
+              <circle cx="48" cy="162" r="6" fill="#000"/>
+              <circle cx="160" cy="162" r="6" fill="#000"/>
+              <circle cx="272" cy="162" r="6" fill="#000"/>
+              <!-- Triangle of red balls -->
+              <g transform="translate(200, 122)">
+                <circle cx="0" cy="0" r="5" fill="url(#redA)"/>
+                <circle cx="10" cy="-5" r="5" fill="url(#redA)"/>
+                <circle cx="10" cy="5" r="5" fill="url(#redA)"/>
+                <circle cx="20" cy="-10" r="5" fill="url(#redA)"/>
+                <circle cx="20" cy="0" r="5" fill="url(#redA)"/>
+                <circle cx="20" cy="10" r="5" fill="url(#redA)"/>
+              </g>
+              <circle cx="80" cy="122" r="6" fill="#fff"/>
+              <rect x="32" y="190" width="14" height="32" fill="url(#woodA)"/>
+              <rect x="153" y="190" width="14" height="32" fill="url(#woodA)"/>
+              <rect x="274" y="190" width="14" height="32" fill="url(#woodA)"/>
+            </svg>
           </div>
-          <h3>שולחנות סנוקר</h3>
-          <p>שולחנות טורניר רשמיים של STAR — אותם שולחנות בהם משחקות אליפויות עולם.</p>
-          <a href="tables.html" class="card-link">לכל הדגמים</a>
+          <div class="product-info">
+            <span class="product-tag">STAR Xingpai</span>
+            <h3>שולחנות סנוקר</h3>
+            <p>שולחנות טורניר רשמיים של STAR — אותם שולחנות בהם משחקות אליפויות עולם.</p>
+            <a href="tables.html" class="card-link">לכל הדגמים</a>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="21" x2="21" y2="3"/><circle cx="5" cy="19" r="2"/><line x1="14" y1="10" x2="20" y2="4"/></svg>
+        <!-- Cues -->
+        <div class="product-card">
+          <div class="product-image">
+            <svg width="100%" height="100%" viewBox="0 0 320 240" preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <linearGradient id="cueA" x1="0%" x2="100%"><stop offset="0%" stop-color="#3aa3ff"/><stop offset="3%" stop-color="#fff"/><stop offset="10%" stop-color="#d4af37"/><stop offset="50%" stop-color="#7a5a20"/><stop offset="100%" stop-color="#2a1810"/></linearGradient>
+                <linearGradient id="cueB" x1="0%" x2="100%"><stop offset="0%" stop-color="#3aa3ff"/><stop offset="3%" stop-color="#fff"/><stop offset="10%" stop-color="#aa3a3a"/><stop offset="50%" stop-color="#5a1a1a"/><stop offset="100%" stop-color="#2a0a0a"/></linearGradient>
+              </defs>
+              <ellipse cx="160" cy="210" rx="120" ry="8" fill="#39ff14" opacity="0.25"/>
+              <line x1="30" y1="100" x2="290" y2="100" stroke="url(#cueA)" stroke-width="12" stroke-linecap="round"/>
+              <rect x="200" y="94" width="50" height="12" fill="#000" rx="3"/>
+              <text x="225" y="103" fill="#d4af37" font-size="7" font-weight="bold" text-anchor="middle">STAR</text>
+              <line x1="30" y1="140" x2="290" y2="140" stroke="url(#cueB)" stroke-width="12" stroke-linecap="round"/>
+              <rect x="200" y="134" width="50" height="12" fill="#fff" rx="3"/>
+              <text x="225" y="143" fill="#aa3a3a" font-size="7" font-weight="bold" text-anchor="middle">PRO</text>
+              <line x1="30" y1="180" x2="290" y2="180" stroke="url(#cueA)" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+            </svg>
           </div>
-          <h3>מקלות מקצועיים</h3>
-          <p>מקלות סנוקר וביליארד ידניים ופרימיום — לכל רמת משחק, מהמתחיל עד השחקן המקצועני.</p>
-          <a href="shop.html#cues" class="card-link">לקולקציית המקלות</a>
+          <div class="product-info">
+            <span class="product-tag">פרימיום</span>
+            <h3>מקלות מקצועיים</h3>
+            <p>מקלות סנוקר וביליארד פרימיום — לכל רמת משחק, מהמתחיל עד השחקן המקצועני.</p>
+            <a href="shop.html#cues" class="card-link">לקולקציית המקלות</a>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+        <!-- Balls -->
+        <div class="product-card">
+          <div class="product-image">
+            <svg width="100%" height="100%" viewBox="0 0 320 240" preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <radialGradient id="bw2" cx="35%" cy="35%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#888"/></radialGradient>
+                <radialGradient id="bR2" cx="35%" cy="35%"><stop offset="0%" stop-color="#ff5050"/><stop offset="100%" stop-color="#7a1010"/></radialGradient>
+                <radialGradient id="bY2" cx="35%" cy="35%"><stop offset="0%" stop-color="#ffee70"/><stop offset="100%" stop-color="#aa8800"/></radialGradient>
+                <radialGradient id="bB2" cx="35%" cy="35%"><stop offset="0%" stop-color="#3aa3ff"/><stop offset="100%" stop-color="#102055"/></radialGradient>
+                <radialGradient id="bG2" cx="35%" cy="35%"><stop offset="0%" stop-color="#4aff7a"/><stop offset="100%" stop-color="#0a4a1a"/></radialGradient>
+                <radialGradient id="bP2" cx="35%" cy="35%"><stop offset="0%" stop-color="#ff80aa"/><stop offset="100%" stop-color="#5a0a3a"/></radialGradient>
+                <radialGradient id="bBlk2" cx="35%" cy="35%"><stop offset="0%" stop-color="#444"/><stop offset="100%" stop-color="#000"/></radialGradient>
+                <radialGradient id="bBr2" cx="35%" cy="35%"><stop offset="0%" stop-color="#cc7a4a"/><stop offset="100%" stop-color="#3a1a0a"/></radialGradient>
+              </defs>
+              <ellipse cx="160" cy="220" rx="120" ry="8" fill="#39ff14" opacity="0.25"/>
+              <circle cx="70" cy="110" r="28" fill="url(#bR2)"/>
+              <circle cx="62" cy="100" r="7" fill="rgba(255,255,255,0.4)"/>
+              <circle cx="130" cy="110" r="28" fill="url(#bY2)"/>
+              <circle cx="122" cy="100" r="7" fill="rgba(255,255,255,0.4)"/>
+              <circle cx="190" cy="110" r="28" fill="url(#bG2)"/>
+              <circle cx="182" cy="100" r="7" fill="rgba(255,255,255,0.4)"/>
+              <circle cx="250" cy="110" r="28" fill="url(#bB2)"/>
+              <circle cx="242" cy="100" r="7" fill="rgba(255,255,255,0.4)"/>
+              <circle cx="100" cy="170" r="28" fill="url(#bBr2)"/>
+              <circle cx="92" cy="160" r="7" fill="rgba(255,255,255,0.4)"/>
+              <circle cx="160" cy="170" r="28" fill="url(#bP2)"/>
+              <circle cx="152" cy="160" r="7" fill="rgba(255,255,255,0.4)"/>
+              <circle cx="220" cy="170" r="28" fill="url(#bBlk2)"/>
+              <circle cx="212" cy="160" r="7" fill="rgba(255,255,255,0.4)"/>
+              <circle cx="220" cy="170" r="10" fill="#fff"/>
+              <text x="220" y="174" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="12" fill="#000">8</text>
+            </svg>
           </div>
-          <h3>כדורים מקצועיים</h3>
-          <p>סטים מלאים של כדורי סנוקר, פול 8, פול 9 — Aramith ו-STAR איכותיים, מדויקים ועמידים.</p>
-          <a href="shop.html#balls" class="card-link">לסטי הכדורים</a>
+          <div class="product-info">
+            <span class="product-tag">Aramith</span>
+            <h3>כדורים מקצועיים</h3>
+            <p>סטים מלאים של כדורי סנוקר, פול 8, פול 9 — Aramith ו-STAR איכותיים ומדויקים.</p>
+            <a href="shop.html#balls" class="card-link">לסטי הכדורים</a>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="2"/><line x1="6" y1="9" x2="18" y2="9"/></svg>
+        <!-- Chalk -->
+        <div class="product-card">
+          <div class="product-image">
+            <svg width="100%" height="100%" viewBox="0 0 320 240" preserveAspectRatio="xMidYMid meet">
+              <ellipse cx="160" cy="215" rx="100" ry="8" fill="#39ff14" opacity="0.25"/>
+              <!-- Master chalk box -->
+              <rect x="60" y="80" width="80" height="80" rx="5" fill="#3aa3ff" stroke="#fff" stroke-width="2"/>
+              <rect x="66" y="86" width="68" height="68" rx="2" fill="#1a6db0"/>
+              <text x="100" y="120" text-anchor="middle" fill="#fff" font-weight="900" font-size="13">MASTER</text>
+              <text x="100" y="138" text-anchor="middle" fill="#fff" font-size="9" font-weight="600">Tournament</text>
+              <!-- Taom chalk -->
+              <rect x="170" y="80" width="80" height="80" rx="5" fill="#7050cc" stroke="#fff" stroke-width="2"/>
+              <rect x="176" y="86" width="68" height="68" rx="2" fill="#4a2a99"/>
+              <text x="210" y="120" text-anchor="middle" fill="#fff" font-weight="900" font-size="13">TAOM</text>
+              <text x="210" y="138" text-anchor="middle" fill="#fff" font-size="9" font-weight="600">Pro Chalk</text>
+              <!-- chalk powder marks -->
+              <circle cx="50" cy="170" r="3" fill="#3aa3ff" opacity="0.5"/>
+              <circle cx="260" cy="180" r="2" fill="#7050cc" opacity="0.5"/>
+              <circle cx="160" cy="190" r="2" fill="#fff" opacity="0.4"/>
+            </svg>
           </div>
-          <h3>גירים ואקססוריז</h3>
-          <p>גירי Master, Triangle, Pioneer Blue, קוביות חידוד, מחזיקי מקלות וכל הציוד הקטן שעושה הבדל גדול.</p>
-          <a href="shop.html#accessories" class="card-link">לכל האקססוריז</a>
+          <div class="product-info">
+            <span class="product-tag">אביזרים</span>
+            <h3>גירים ואקססוריז</h3>
+            <p>גירי Master, Taom, Triangle ועוד — כל הציוד הקטן שעושה הבדל גדול במשחק.</p>
+            <a href="shop.html#chalk" class="card-link">לכל האקססוריז</a>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V8l8-5 8 5v14"/><path d="M9 22v-8h6v8"/></svg>
+        <!-- Cloth -->
+        <div class="product-card">
+          <div class="product-image">
+            <svg width="100%" height="100%" viewBox="0 0 320 240" preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <pattern id="cloth1" patternUnits="userSpaceOnUse" width="6" height="6">
+                  <rect width="6" height="6" fill="#0a4d2a"/>
+                  <line x1="0" y1="0" x2="6" y2="6" stroke="#1a7a4f" stroke-width="0.4"/>
+                  <line x1="6" y1="0" x2="0" y2="6" stroke="#1a7a4f" stroke-width="0.4"/>
+                </pattern>
+              </defs>
+              <ellipse cx="160" cy="210" rx="120" ry="8" fill="#39ff14" opacity="0.25"/>
+              <rect x="50" y="60" width="220" height="140" rx="12" fill="url(#cloth1)" stroke="#d4af37" stroke-width="2" stroke-opacity="0.5"/>
+              <rect x="55" y="65" width="210" height="20" fill="rgba(255,255,255,0.05)"/>
+              <text x="160" y="135" text-anchor="middle" fill="#39ff14" font-family="Rubik" font-weight="900" font-size="22" opacity="0.9">STRACHAN</text>
+              <text x="160" y="155" text-anchor="middle" fill="#fff" font-size="11" letter-spacing="0.2em" opacity="0.8">6811 TOURNAMENT</text>
+              <line x1="80" y1="170" x2="240" y2="170" stroke="#39ff14" stroke-width="1" opacity="0.5"/>
+            </svg>
           </div>
-          <h3>התקנה והובלה</h3>
-          <p>צוות מקצועי שמתקין את השולחן בבית או במועדון שלך, מאזן אותו לרמה טורנירית — ואחריות מלאה.</p>
-          <a href="contact.html" class="card-link">לקבלת הצעה</a>
+          <div class="product-info">
+            <span class="product-tag">Strachan</span>
+            <h3>בדים מקצועיים</h3>
+            <p>בד טורניר Strachan 6811 — אותו בד עליו משחקים את אליפות העולם בסנוקר.</p>
+            <a href="shop.html" class="card-link">לבדי השולחן</a>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <!-- Installation -->
+        <div class="product-card">
+          <div class="product-image">
+            <svg width="100%" height="100%" viewBox="0 0 320 240" preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <radialGradient id="feltI" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="#1a7a4f"/><stop offset="100%" stop-color="#0a4d2a"/></radialGradient>
+              </defs>
+              <ellipse cx="160" cy="220" rx="130" ry="8" fill="#39ff14" opacity="0.25"/>
+              <!-- Truck shape -->
+              <rect x="50" y="100" width="120" height="80" rx="6" fill="#5a3a18"/>
+              <rect x="170" y="120" width="60" height="60" rx="4" fill="#3a2410"/>
+              <rect x="180" y="130" width="40" height="30" rx="2" fill="#a8d8ff" opacity="0.7"/>
+              <circle cx="85" cy="190" r="14" fill="#1a1a1a"/>
+              <circle cx="85" cy="190" r="6" fill="#444"/>
+              <circle cx="200" cy="190" r="14" fill="#1a1a1a"/>
+              <circle cx="200" cy="190" r="6" fill="#444"/>
+              <text x="110" y="150" text-anchor="middle" fill="#39ff14" font-weight="900" font-size="20">POOL BAR</text>
+              <text x="110" y="167" text-anchor="middle" fill="#fff" font-size="10" letter-spacing="0.15em">EXPRESS</text>
+              <!-- speed lines -->
+              <line x1="240" y1="130" x2="280" y2="130" stroke="#39ff14" stroke-width="2" opacity="0.6"/>
+              <line x1="245" y1="145" x2="285" y2="145" stroke="#39ff14" stroke-width="2" opacity="0.4"/>
+              <line x1="240" y1="160" x2="280" y2="160" stroke="#39ff14" stroke-width="2" opacity="0.6"/>
+            </svg>
           </div>
-          <h3>ייעוץ מקצועי</h3>
-          <p>25 שנות ניסיון לרשותך — צריך עזרה לבחור שולחן, מקל או סט כדורים? אנחנו כאן.</p>
-          <a href="contact.html" class="card-link">דברו איתנו</a>
+          <div class="product-info">
+            <span class="product-tag">שירות</span>
+            <h3>התקנה והובלה</h3>
+            <p>צוות מקצועי שמוביל, מתקין ומאזן את השולחן ברמת טורניר — עם אחריות מלאה.</p>
+            <a href="contact.html" class="card-link">לקבלת הצעה</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- About teaser -->
-  <section style="padding-top: 0;">
+  <section class="section-wood">
     <div class="container">
       <div class="feature-card reveal" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: center;">
         <div>
           <span class="eyebrow">הסיפור שלנו</span>
-          <h2>רבע מאה של תשוקה לסנוקר</h2>
+          <h2>רבע מאה של <span class="text-gold">תשוקה</span> לסנוקר</h2>
           <p style="color: var(--text-muted); margin: 1.5rem 0; font-size: 1.05rem;">
             פול בר נוסדה בשנת 2000 על ידי אוהבי סנוקר אמיתיים, מתוך חזון אחד — להביא לישראל את חוויית הסנוקר ברמה הגבוהה בעולם. עם השנים הפכנו ממועדון קטן בחדרה לכתובת המקצועית של אלפי שחקנים, מועדונים וחובבים בכל הארץ.
           </p>
@@ -187,12 +354,12 @@
         </div>
         <div style="position: relative; height: 360px; display: flex; align-items: center; justify-content: center;">
           <div style="position: relative; width: 280px; height: 280px;">
-            <div style="position: absolute; inset: 0; border-radius: 50%; background: conic-gradient(from 0deg, var(--neon-green), transparent 60%, var(--neon-green)); animation: brandSpin 8s linear infinite; opacity: 0.4; filter: blur(20px);"></div>
-            <div style="position: absolute; inset: 30px; border-radius: 50%; background: radial-gradient(circle at 30% 30%, #555, #000); box-shadow: 0 0 80px rgba(57, 255, 20, 0.5);"></div>
+            <div style="position: absolute; inset: 0; border-radius: 50%; background: conic-gradient(from 0deg, var(--neon-green), var(--gold), transparent 40%, var(--neon-green)); animation: spin 8s linear infinite; opacity: 0.5; filter: blur(20px);"></div>
+            <div style="position: absolute; inset: 20px; border-radius: 50%; background: radial-gradient(circle at 30% 30%, #555, #000); box-shadow: 0 0 80px rgba(57, 255, 20, 0.5);"></div>
             <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
               <div style="text-align: center; z-index: 2;">
-                <div style="font-family: var(--font-display); font-size: 5rem; font-weight: 900; color: var(--neon-green); line-height: 1; text-shadow: 0 0 20px rgba(57,255,20,0.6);">25</div>
-                <div style="color: var(--white); font-size: 1rem; letter-spacing: 0.2em; margin-top: 0.5rem;">YEARS</div>
+                <div style="font-family: var(--font-display); font-size: 5.5rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, #ffec80, #d4af37, #39ff14); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 20px rgba(57,255,20,0.6));">25</div>
+                <div style="color: var(--white); font-size: 1rem; letter-spacing: 0.3em; margin-top: 0.5rem; font-weight: 700;">YEARS</div>
               </div>
             </div>
           </div>
@@ -202,37 +369,90 @@
   </section>
 
   <!-- Clubs preview -->
-  <section>
+  <section class="section-felt">
     <div class="container">
       <div class="section-header reveal">
         <span class="eyebrow">המועדונים שלנו</span>
-        <h2>שני מועדונים. אווירה אחת בלתי נשכחת.</h2>
+        <h2>שני מועדונים. <span class="text-neon">אווירה אחת.</span></h2>
         <p>בואו לחוות את הסנוקר ברמה הכי גבוהה בארץ. שולחנות STAR מקצועיים, אווירה, בר וחברה טובה.</p>
       </div>
-      <div class="cards-grid">
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
         <div class="club-card reveal">
-          <div class="club-visual"></div>
+          <div class="club-visual">
+            <svg width="100%" height="100%" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <radialGradient id="feltH2" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="#1a7a4f"/><stop offset="100%" stop-color="#0a4d2a"/></radialGradient>
+                <linearGradient id="hWood" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#7a4a26"/><stop offset="100%" stop-color="#2a1810"/></linearGradient>
+              </defs>
+              <rect width="400" height="280" fill="#060a08"/>
+              <!-- ambient lights -->
+              <ellipse cx="100" cy="50" rx="60" ry="20" fill="#ffd60a" opacity="0.15"/>
+              <ellipse cx="300" cy="50" rx="60" ry="20" fill="#ffd60a" opacity="0.15"/>
+              <!-- table -->
+              <rect x="30" y="100" width="340" height="160" rx="10" fill="url(#hWood)" stroke="#d4af37" stroke-width="1" stroke-opacity="0.5"/>
+              <rect x="50" y="120" width="300" height="120" rx="5" fill="url(#feltH2)"/>
+              <circle cx="62" cy="132" r="8" fill="#000"/>
+              <circle cx="200" cy="132" r="8" fill="#000"/>
+              <circle cx="338" cy="132" r="8" fill="#000"/>
+              <circle cx="62" cy="228" r="8" fill="#000"/>
+              <circle cx="200" cy="228" r="8" fill="#000"/>
+              <circle cx="338" cy="228" r="8" fill="#000"/>
+              <!-- balls -->
+              <circle cx="280" cy="170" r="8" fill="#fff"/>
+              <circle cx="180" cy="180" r="8" fill="#aa3a3a"/>
+              <circle cx="160" cy="170" r="8" fill="#ffd60a"/>
+              <circle cx="170" cy="195" r="8" fill="#000"/>
+            </svg>
+          </div>
           <div class="club-info">
-            <span class="city">חדרה</span>
+            <span class="city">חדרה · הסניף הראשי</span>
             <h3>פול בר חדרה</h3>
-            <p style="color: var(--text-muted); margin: 0.5rem 0;">הסניף הראשי. מועדון פעיל, שולחנות מקצועיים, בר ואווירה שלא תרצו לעזוב.</p>
+            <p style="color: var(--text-muted); margin: 0.5rem 0;">מועדון פעיל, שולחנות מקצועיים, בר ואווירה שלא תרצו לעזוב. כאן גם חנות הציוד שלנו.</p>
             <div class="club-features">
-              <span>שולחנות סנוקר</span>
+              <span>5 שולחנות סנוקר</span>
               <span>בר מלא</span>
               <span>טורנירים</span>
+              <span>חנות ציוד</span>
             </div>
             <a href="clubs.html#hadera" class="card-link">למידע נוסף</a>
           </div>
         </div>
 
         <div class="club-card reveal">
-          <div class="club-visual"></div>
+          <div class="club-visual">
+            <svg width="100%" height="100%" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <radialGradient id="feltB2" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="#1a7a4f"/><stop offset="100%" stop-color="#0a4d2a"/></radialGradient>
+                <linearGradient id="bWood" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#7a4a26"/><stop offset="100%" stop-color="#2a1810"/></linearGradient>
+              </defs>
+              <rect width="400" height="280" fill="#060a08"/>
+              <ellipse cx="200" cy="50" rx="120" ry="25" fill="#39ff14" opacity="0.15"/>
+              <rect x="30" y="100" width="340" height="160" rx="10" fill="url(#bWood)" stroke="#d4af37" stroke-width="1" stroke-opacity="0.5"/>
+              <rect x="50" y="120" width="300" height="120" rx="5" fill="url(#feltB2)"/>
+              <circle cx="62" cy="132" r="8" fill="#000"/>
+              <circle cx="200" cy="132" r="8" fill="#000"/>
+              <circle cx="338" cy="132" r="8" fill="#000"/>
+              <circle cx="62" cy="228" r="8" fill="#000"/>
+              <circle cx="200" cy="228" r="8" fill="#000"/>
+              <circle cx="338" cy="228" r="8" fill="#000"/>
+              <!-- rack -->
+              <g transform="translate(240, 180)">
+                <circle cx="0" cy="0" r="6" fill="#ffd60a"/>
+                <circle cx="13" cy="-7" r="6" fill="#3aa3ff"/>
+                <circle cx="13" cy="7" r="6" fill="#aa3a3a"/>
+                <circle cx="26" cy="-14" r="6" fill="#000"/>
+                <circle cx="26" cy="0" r="6" fill="#7a3a99"/>
+                <circle cx="26" cy="14" r="6" fill="#ff9a3c"/>
+              </g>
+              <circle cx="120" cy="180" r="7" fill="#fff"/>
+            </svg>
+          </div>
           <div class="club-info">
-            <span class="city">בנימינה</span>
+            <span class="city">בנימינה · יוקרתי</span>
             <h3>פול בר בנימינה</h3>
             <p style="color: var(--text-muted); margin: 0.5rem 0;">מועדון יוקרתי במרכז הפיל. אווירה מיוחדת, ציוד פרימיום וחוויית משחק מושלמת.</p>
             <div class="club-features">
-              <span>שולחנות סנוקר</span>
+              <span>3 שולחנות סנוקר</span>
               <span>אווירה אינטימית</span>
               <span>חניה</span>
             </div>
@@ -252,7 +472,7 @@
         <p>בין אם אתה רוצה לשדרג את הסלון, להקים מועדון או פשוט לבחור מקל חדש — נשמח לייעץ ולמצוא בדיוק את מה שאתה צריך.</p>
         <div class="hero-actions" style="justify-content: center;">
           <a href="contact.html" class="btn btn-primary">קבל הצעה אישית</a>
-          <a href="tel:0529008202" class="btn btn-outline">📞 052-900-8202</a>
+          <a href="tel:0529008202" class="btn btn-gold">📞 052-900-8202</a>
         </div>
       </div>
     </div>
@@ -263,32 +483,17 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a href="index.html" class="brand" style="margin-bottom: 1rem;">
-            <span class="brand-ball"></span>
-            <span class="brand-text">
-              פול בר
-              <small>POOL BAR · STAR</small>
-            </span>
-          </a>
+          <img src="assets/logo.svg" alt="פול בר" class="footer-logo" />
           <p style="color: var(--text-muted); margin-top: 1rem; max-width: 320px;">
             הכתובת המובילה בישראל לציוד סנוקר ושולחנות טורניר מקצועיים. זכיין רשמי של STAR (Xingpai).
           </p>
           <div class="social-links">
-            <a href="#" aria-label="Instagram">
-              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-            </a>
-            <a href="#" aria-label="Facebook">
-              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M14 13.5h2.5l1-4H14v-2c0-1 .5-2 2-2h1.5V2.1A26.5 26.5 0 0015.1 2C12.5 2 10 3.5 10 6.5v3H7v4h3V22h4v-8.5z"/></svg>
-            </a>
-            <a href="#" aria-label="TikTok">
-              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M19.5 6.5a5.5 5.5 0 01-3.5-1.2v9a5.5 5.5 0 11-5.5-5.5c.3 0 .6 0 1 .1v3a2.5 2.5 0 102 2.4V2h3a3.5 3.5 0 003 3.5z"/></svg>
-            </a>
-            <a href="#" aria-label="WhatsApp">
-              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 1.7.4 3.3 1.2 4.7L2 22l5.4-1.4A10 10 0 1012 2zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.3-.5.1-1.1.1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.2.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l.8-1c.2-.2.4-.2.6-.1l1.9.9c.3.2.5.2.6.4.1.2.1.9-.2 1.5z"/></svg>
-            </a>
+            <a href="#" aria-label="Instagram"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M14 13.5h2.5l1-4H14v-2c0-1 .5-2 2-2h1.5V2.1A26.5 26.5 0 0015.1 2C12.5 2 10 3.5 10 6.5v3H7v4h3V22h4v-8.5z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M19.5 6.5a5.5 5.5 0 01-3.5-1.2v9a5.5 5.5 0 11-5.5-5.5c.3 0 .6 0 1 .1v3a2.5 2.5 0 102 2.4V2h3a3.5 3.5 0 003 3.5z"/></svg></a>
+            <a href="https://wa.me/972529008202" aria-label="WhatsApp"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 1.7.4 3.3 1.2 4.7L2 22l5.4-1.4A10 10 0 1012 2zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.3-.5.1-1.1.1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.2.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l.8-1c.2-.2.4-.2.6-.1l1.9.9c.3.2.5.2.6.4.1.2.1.9-.2 1.5z"/></svg></a>
           </div>
         </div>
-
         <div>
           <h4>ניווט</h4>
           <ul>
@@ -300,7 +505,6 @@
             <li><a href="gallery.html">גלריה</a></li>
           </ul>
         </div>
-
         <div>
           <h4>קטגוריות</h4>
           <ul>
@@ -308,11 +512,9 @@
             <li><a href="shop.html#cues">מקלות מקצועיים</a></li>
             <li><a href="shop.html#balls">סטי כדורים</a></li>
             <li><a href="shop.html#chalk">גירים ואביזרים</a></li>
-            <li><a href="shop.html#cloth">בדים ובוצמרים</a></li>
             <li><a href="contact.html">התקנה והובלה</a></li>
           </ul>
         </div>
-
         <div>
           <h4>צור קשר</h4>
           <ul>
@@ -323,13 +525,13 @@
           </ul>
         </div>
       </div>
-
       <div class="footer-bottom">
         <p>&copy; <span id="year">2026</span> פול בר. כל הזכויות שמורות. · זכיין רשמי של STAR (Xingpai) בישראל.</p>
       </div>
     </div>
   </footer>
 
+  <style>@keyframes spin { to { transform: rotate(360deg); } }</style>
   <script src="js/main.js"></script>
 </body>
 </html>
