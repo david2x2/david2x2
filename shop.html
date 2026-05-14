@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>חנות ציוד | פול בר - מקלות, כדורים, גירים ואקססוריז</title>
+  <meta name="description" content="חנות ציוד הסנוקר של פול בר - מקלות, כדורים, גירים, בדים ואביזרים מקצועיים." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23000'/><circle cx='16' cy='16' r='6' fill='%23fff'/><text x='16' y='20' text-anchor='middle' font-family='Arial' font-weight='900' font-size='9' fill='%23000'>8</text></svg>" />
+</head>
+<body>
+  <div class="preloader" id="preloader"><div class="preloader-ball"></div></div>
+
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand"><span class="brand-ball"></span><span class="brand-text">פול בר<small>POOL BAR · STAR</small></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">בית</a></li>
+        <li><a href="about.html">אודות</a></li>
+        <li><a href="clubs.html">המועדונים</a></li>
+        <li><a href="tables.html">שולחנות</a></li>
+        <li><a href="shop.html" class="active">חנות ציוד</a></li>
+        <li><a href="gallery.html">גלריה</a></li>
+        <li><a href="contact.html" class="nav-cta">צור קשר</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">בית</a><span>/</span><span>חנות ציוד</span></div>
+      <span class="eyebrow">הכל למשחק</span>
+      <h1>חנות ציוד <span class="text-neon">סנוקר וביליארד</span></h1>
+      <p>מקלות מקצועיים, כדורי Aramith, גירים, בדי Strachan, מסילות, אביזרים — הכל מהמותגים המובילים בעולם.</p>
+    </div>
+  </header>
+
+  <section style="padding-top: 2rem;">
+    <div class="container">
+      <div class="filter-chips reveal" data-filter-group data-filter-target=".product-card[data-tags]">
+        <button class="chip active" data-filter="all">הכל</button>
+        <button class="chip" data-filter="cues">מקלות</button>
+        <button class="chip" data-filter="balls">כדורים</button>
+        <button class="chip" data-filter="chalk">גירים</button>
+        <button class="chip" data-filter="cloth">בדים</button>
+        <button class="chip" data-filter="accessories">אביזרים</button>
+      </div>
+
+      <!-- Cues section -->
+      <h2 id="cues" style="margin: 2rem 0; padding-top: 1rem;">מקלות סנוקר וביליארד</h2>
+      <div class="cards-grid reveal-stagger" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div class="product-card" data-tags="cues">
+          <div class="product-image">
+            <svg width="100%" height="200" viewBox="0 0 280 200">
+              <defs><linearGradient id="cue1" x1="0%" x2="100%"><stop offset="0%" stop-color="#d4af37"/><stop offset="40%" stop-color="#7a5a20"/><stop offset="100%" stop-color="#2a1810"/></linearGradient></defs>
+              <line x1="20" y1="100" x2="260" y2="100" stroke="url(#cue1)" stroke-width="10" stroke-linecap="round"/>
+              <circle cx="20" cy="100" r="6" fill="#3aa3ff"/>
+              <rect x="180" y="95" width="40" height="10" fill="#000" rx="2"/>
+              <text x="195" y="103" fill="#d4af37" font-size="6" font-weight="bold">STAR</text>
+            </svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">פרימיום</span>
+            <h3>STAR Professional Cue</h3>
+            <p>מקל סנוקר מקצועי, עץ אש קנדי מובחר, ידנית עם מאזן מושלם — אורך 145ס"מ, משקל 18oz.</p>
+            <div class="product-actions">
+              <div class="product-price">₪1,890</div>
+              <a href="contact.html" class="product-btn">הזמן</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="cues">
+          <div class="product-image">
+            <svg width="100%" height="200" viewBox="0 0 280 200">
+              <defs><linearGradient id="cue2" x1="0%" x2="100%"><stop offset="0%" stop-color="#aa3a3a"/><stop offset="40%" stop-color="#5a1a1a"/><stop offset="100%" stop-color="#2a0a0a"/></linearGradient></defs>
+              <line x1="20" y1="100" x2="260" y2="100" stroke="url(#cue2)" stroke-width="10" stroke-linecap="round"/>
+              <circle cx="20" cy="100" r="6" fill="#3aa3ff"/>
+              <rect x="180" y="95" width="40" height="10" fill="#fff" rx="2"/>
+              <text x="195" y="103" fill="#aa3a3a" font-size="6" font-weight="bold">STAR</text>
+            </svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">טורנירים</span>
+            <h3>STAR Tournament Cue</h3>
+            <p>מקל בעיצוב מסורתי עם פיירול פליז וקצה Elk Master. בחירה של רבים משחקני הליגה הישראלית.</p>
+            <div class="product-actions">
+              <div class="product-price">₪2,490</div>
+              <a href="contact.html" class="product-btn">הזמן</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="cues">
+          <div class="product-image">
+            <svg width="100%" height="200" viewBox="0 0 280 200">
+              <defs><linearGradient id="cue3" x1="0%" x2="100%"><stop offset="0%" stop-color="#1a4a7a"/><stop offset="40%" stop-color="#0a2a4a"/><stop offset="100%" stop-color="#0a1525"/></linearGradient></defs>
+              <line x1="20" y1="100" x2="260" y2="100" stroke="url(#cue3)" stroke-width="10" stroke-linecap="round"/>
+              <circle cx="20" cy="100" r="6" fill="#fff"/>
+              <rect x="180" y="95" width="40" height="10" fill="#d4af37" rx="2"/>
+              <text x="200" y="103" fill="#000" font-size="6" font-weight="bold">PRO</text>
+            </svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">חדש</span>
+            <h3>Carbon Pro Series</h3>
+            <p>מקל היברידי עם ליבת קרבון מקצועית — מינימום ויברציות, מקסימום שליטה. למקצוענים בלבד.</p>
+            <div class="product-actions">
+              <div class="product-price">₪3,290</div>
+              <a href="contact.html" class="product-btn">הזמן</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="cues">
+          <div class="product-image">
+            <svg width="100%" height="200" viewBox="0 0 280 200">
+              <defs><linearGradient id="cue4" x1="0%" x2="100%"><stop offset="0%" stop-color="#d4af37"/><stop offset="100%" stop-color="#5a3a10"/></linearGradient></defs>
+              <line x1="20" y1="100" x2="260" y2="100" stroke="url(#cue4)" stroke-width="8" stroke-linecap="round"/>
+              <circle cx="20" cy="100" r="5" fill="#aa6622"/>
+            </svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">מתחילים</span>
+            <h3>סט מקלות בית</h3>
+            <p>סט של 4 מקלות איכותיים לבית או למועדון — אורכים שונים, עץ מסיבי, מאוזנים היטב.</p>
+            <div class="product-actions">
+              <div class="product-price">₪690 <small>· לסט</small></div>
+              <a href="contact.html" class="product-btn">הזמן</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Balls section -->
+      <h2 id="balls" style="margin: 4rem 0 2rem;">סטי כדורים</h2>
+      <div class="cards-grid reveal-stagger" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div class="product-card" data-tags="balls">
+          <div class="product-image">
+            <svg width="100%" height="200" viewBox="0 0 280 200">
+              <defs>
+                <radialGradient id="bw" cx="35%" cy="35%"><stop offset="0%" stop-color="#fff"/><stop offset="60%" stop-color="#e0e0e0"/><stop offset="100%" stop-color="#888"/></radialGradient>
+                <radialGradient id="bR" cx="35%" cy="35%"><stop offset="0%" stop-color="#ff5050"/><stop offset="100%" stop-color="#7a1010"/></radialGradient>
+                <radialGradient id="bY" cx="35%" cy="35%"><stop offset="0%" stop-color="#ffee70"/><stop offset="100%" stop-color="#aa8800"/></radialGradient>
+                <radialGradient id="bB" cx="35%" cy="35%"><stop offset="0%" stop-color="#3aa3ff"/><stop offset="100%" stop-color="#102055"/></radialGradient>
+                <radialGradient id="bG" cx="35%" cy="35%"><stop offset="0%" stop-color="#4aff7a"/><stop offset="100%" stop-color="#0a4a1a"/></radialGradient>
+                <radialGradient id="bBr" cx="35%" cy="35%"><stop offset="0%" stop-color="#cc7a4a"/><stop offset="100%" stop-color="#3a1a0a"/></radialGradient>
+                <radialGradient id="bP" cx="35%" cy="35%"><stop offset="0%" stop-color="#ff80aa"/><stop offset="100%" stop-color="#5a0a3a"/></radialGradient>
+                <radialGradient id="bBlk" cx="35%" cy="35%"><stop offset="0%" stop-color="#444"/><stop offset="100%" stop-color="#000"/></radialGradient>
+              </defs>
+              <circle cx="70" cy="80" r="22" fill="url(#bw)"/>
+              <circle cx="120" cy="80" r="22" fill="url(#bY)"/>
+              <circle cx="170" cy="80" r="22" fill="url(#bG)"/>
+              <circle cx="220" cy="80" r="22" fill="url(#bBr)"/>
+              <circle cx="90" cy="140" r="22" fill="url(#bB)"/>
+              <circle cx="140" cy="140" r="22" fill="url(#bP)"/>
+              <circle cx="195" cy="140" r="22" fill="url(#bR)"/>
+              <circle cx="250" cy="140" r="22" fill="url(#bBlk)"/>
+            </svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Aramith</span>
+            <h3>סט סנוקר מקצועי</h3>
+            <p>22 כדורי סנוקר מקוריים של Aramith — 15 אדומים + 6 צבעים + כדור לבן. מאזן ועמידות מושלמים.</p>
+            <div class="product-actions">
+              <div class="product-price">₪1,290</div>
+              <a href="contact.html" class="product-btn">הזמן</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="balls">
+          <div class="product-image">
+            <svg width="100%" height="200" viewBox="0 0 280 200">
+              <defs>
+                <radialGradient id="p1" cx="35%" cy="35%"><stop offset="0%" stop-color="#ffee70"/><stop offset="100%" stop-color="#aa8800"/></radialGradient>
+                <radialGradient id="p2" cx="35%" cy="35%"><stop offset="0%" stop-color="#3aa3ff"/><stop offset="100%" stop-color="#102055"/></radialGradient>
+                <radialGradient id="p3" cx="35%" cy="35%"><stop offset="0%" stop-color="#ff5050"/><stop offset="100%" stop-color="#7a1010"/></radialGradient>
+                <radialGradient id="p4" cx="35%" cy="35%"><stop offset="0%" stop-color="#aa70ff"/><stop offset="100%" stop-color="#2a0a55"/></radialGradient>
+                <radialGradient id="p5" cx="35%" cy="35%"><stop offset="0%" stop-color="#ff9a3c"/><stop offset="100%" stop-color="#5a2a0a"/></radialGradient>
+                <radialGradient id="p6" cx="35%" cy="35%"><stop offset="0%" stop-color="#4aff7a"/><stop offset="100%" stop-color="#0a4a1a"/></radialGradient>
+                <radialGradient id="p7" cx="35%" cy="35%"><stop offset="0%" stop-color="#cc4a2a"/><stop offset="100%" stop-color="#3a0a0a"/></radialGradient>
+                <radialGradient id="p8" cx="35%" cy="35%"><stop offset="0%" stop-color="#444"/><stop offset="100%" stop-color="#000"/></radialGradient>
+              </defs>
+              <circle cx="70" cy="80" r="22" fill="url(#p1)"/><text x="70" y="86" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">1</text>
+              <circle cx="120" cy="80" r="22" fill="url(#p2)"/><text x="120" y="86" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">2</text>
+              <circle cx="170" cy="80" r="22" fill="url(#p3)"/><text x="170" y="86" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">3</text>
+              <circle cx="220" cy="80" r="22" fill="url(#p4)"/><text x="220" y="86" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">4</text>
+              <circle cx="90" cy="140" r="22" fill="url(#p5)"/><text x="90" y="146" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">5</text>
+              <circle cx="140" cy="140" r="22" fill="url(#p6)"/><text x="140" y="146" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">6</text>
+              <circle cx="195" cy="140" r="22" fill="url(#p7)"/><text x="195" y="146" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">7</text>
+              <circle cx="250" cy="140" r="22" fill="url(#p8)"/><text x="250" y="146" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">8</text>
+            </svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Aramith</span>
+            <h3>סט כדורי פול 8</h3>
+            <p>סט מלא של 16 כדורי פול 8 — 8 כדורי פס מלאים, 7 כדורי פס מפוספסים + כדור 8 שחור. עמיד ומדויק.</p>
+            <div class="product-actions">
+              <div class="product-price">₪690</div>
+              <a href="contact.html" class="product-btn">הזמן</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="balls">
+          <div class="product-image">
+            <svg width="100%" height="200" viewBox="0 0 280 200">
+              <defs>
+                <radialGradient id="r1" cx="35%" cy="35%"><stop offset="0%" stop-color="#ff8080"/><stop offset="100%" stop-color="#7a1010"/></radialGradient>
+              </defs>
+              <g>
+                <circle cx="100" cy="100" r="18" fill="url(#r1)"/>
+                <circle cx="135" cy="100" r="18" fill="url(#r1)"/>
+                <circle cx="170" cy="100" r="18" fill="url(#r1)"/>
+                <circle cx="120" cy="135" r="18" fill="url(#r1)"/>
+                <circle cx="155" cy="135" r="18" fill="url(#r1)"/>
+                <circle cx="140" cy="70" r="18" fill="url(#r1)"/>
+              </g>
+            </svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">חלקי החלפה</span>
+            <h3>כדורים אדומים (15)</h3>
+            <p>סט של 15 כדורים אדומים להחלפה בסט הסנוקר — Aramith Premium 52.5מ"מ.</p>
+            <div class="product-actions">
+              <div class="product-price">₪590</div>
+              <a href="contact.html" class="product-btn">הזמן</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chalk -->
+      <h2 id="chalk" style="margin: 4rem 0 2rem;">גירים ואקססוריז</h2>
+      <div class="cards-grid reveal-stagger" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div class="product-card" data-tags="chalk">
+          <div class="product-image">
+            <svg width="100%" height="200" viewBox="0 0 280 200">
+              <rect x="100" y="60" width="80" height="80" rx="4" fill="#3aa3ff"/>
+              <rect x="106" y="66" width="68" height="68" rx="2" fill="#1a6db0"/>
+              <text x="140" y="105" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">MASTER</text>
+              <text x="140" y="120" text-anchor="middle" fill="#fff" font-size="9">Chalk</text>
+            </svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Master</span>
+            <h3>גיר Master (12 יח')</h3>
+            <p>הגיר הקלאסי. הבחירה של מקצועני סנוקר וביליארד מאז 1925. אריזת 12 קוביות.</p>
+            <div class="product-actions">
+              <div class="product-price">₪89</div>
+              <a href="contact.html" class="product-btn">הזמן</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="chalk">
+          <div class="product-image">
+            <svg width="100%" height="200" viewBox="0 0 280 200">
+              <rect x="100" y="60" width="80" height="80" rx="4" fill="#7050cc"/>
+              <rect x="106" y="66" width="68" height="68" rx="2" fill="#4a2a99"/>
+              <text x="140" y="105" text-anchor="middle" fill="#fff" font-weight="bold" font-size="12">TAOM</text>
+              <text x="140" y="120" text-anchor="middle" fill="#fff" font-size="9">PYRO</text>
+            </svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">פרימיום</span>
+            <h3>Taom Pyro Chalk</h3>
+            <p>גיר הפרימיום החדש מפינלנד. אדהזיה מקסימלית, ללא miscues, ללא לכלוך על הבד.</p>
+            <div class="product-actions">
+              <div class="product-price">₪249</div>
+              <a href="contact.html" class="product-btn">הזמן</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="accessories">
+          <div class="product-image">
+            <svg width="100%" height="200" viewBox="0 0 280 200">
+              <polygon points="80,140 200,140 140,40" fill="#5a3a20" stroke="#d4af37" stroke-width="2"/>
+              <polygon points="100,135 180,135 140,60" fill="#0a4d2a"/>
+              <circle cx="140" cy="120" r="8" fill="#aa3a3a"/>
+              <circle cx="128" cy="110" r="8" fill="#aa3a3a"/>
+              <circle cx="152" cy="110" r="8" fill="#aa3a3a"/>
+            </svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">אביזרים</span>
+            <h3>טרינגל סנוקר עץ</h3>
+            <p>טרינגל עץ מסיבי עם ציפוי מגן — לסידור מהיר ומדויק של 15 הכדורים האדומים.</p>
+            <div class="product-actions">
+              <div class="product-price">₪149</div>
+              <a href="contact.html" class="product-btn">הזמן</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="accessories">
+          <div class="product-image">
+            <svg width="100%" height="200" viewBox="0 0 280 200">
+              <rect x="60" y="60" width="160" height="80" rx="6" fill="#2a1810" stroke="#d4af37" stroke-width="1"/>
+              <rect x="70" y="75" width="20" height="50" rx="2" fill="#3a2418"/>
+              <rect x="100" y="75" width="20" height="50" rx="2" fill="#3a2418"/>
+              <rect x="130" y="75" width="20" height="50" rx="2" fill="#3a2418"/>
+              <rect x="160" y="75" width="20" height="50" rx="2" fill="#3a2418"/>
+              <rect x="190" y="75" width="20" height="50" rx="2" fill="#3a2418"/>
+              <line x1="80" y1="80" x2="80" y2="50" stroke="#d4af37" stroke-width="3"/>
+              <line x1="110" y1="80" x2="110" y2="50" stroke="#d4af37" stroke-width="3"/>
+              <line x1="140" y1="80" x2="140" y2="50" stroke="#d4af37" stroke-width="3"/>
+            </svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">אביזרים</span>
+            <h3>מתלה מקלות (8 מקלות)</h3>
+            <p>מתלה קיר אלגנטי לאחסון מסודר של מקלות. עץ אגוז מלא עם פרזולים מצופים זהב.</p>
+            <div class="product-actions">
+              <div class="product-price">₪590</div>
+              <a href="contact.html" class="product-btn">הזמן</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="cloth">
+          <div class="product-image">
+            <svg width="100%" height="200" viewBox="0 0 280 200">
+              <defs>
+                <pattern id="weave" patternUnits="userSpaceOnUse" width="6" height="6">
+                  <rect width="6" height="6" fill="#0a4d2a"/>
+                  <line x1="0" y1="0" x2="6" y2="6" stroke="#1a7a4f" stroke-width="0.5"/>
+                  <line x1="6" y1="0" x2="0" y2="6" stroke="#1a7a4f" stroke-width="0.5"/>
+                </pattern>
+              </defs>
+              <rect x="40" y="40" width="200" height="120" rx="8" fill="url(#weave)" stroke="#39ff14" stroke-width="1" stroke-opacity="0.4"/>
+              <rect x="40" y="40" width="200" height="20" fill="#39ff14" opacity="0.1"/>
+            </svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Strachan</span>
+            <h3>בד טורניר Strachan 6811</h3>
+            <p>בד הצמר-ניילון הרשמי של אליפויות העולם. מהירות מושלמת, עמידות גבוהה, צבע ירוק טורניר.</p>
+            <div class="product-actions">
+              <div class="product-price">לבירור</div>
+              <a href="contact.html" class="product-btn">הזמן</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="accessories">
+          <div class="product-image">
+            <svg width="100%" height="200" viewBox="0 0 280 200">
+              <ellipse cx="140" cy="120" rx="80" ry="20" fill="#3a2418"/>
+              <rect x="60" y="60" width="160" height="60" rx="3" fill="#5a3a20"/>
+              <line x1="60" y1="75" x2="220" y2="75" stroke="#d4af37" stroke-width="1"/>
+              <line x1="60" y1="105" x2="220" y2="105" stroke="#d4af37" stroke-width="1"/>
+              <rect x="80" y="80" width="120" height="20" fill="#000" rx="2"/>
+            </svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">פנימי</span>
+            <h3>תיק מקל מקצועי</h3>
+            <p>תיק עור איכותי לשני מקלות. ריפוד פנימי, ריצרץ' נירוסטה ולוגו ממותג.</p>
+            <div class="product-actions">
+              <div class="product-price">₪390</div>
+              <a href="contact.html" class="product-btn">הזמן</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>לא מצאת מה <span class="text-neon">שחיפשת</span>?</h2>
+        <p>אנחנו מייבאים על פי דרישה מקלות, סטי כדורים מיוחדים, חלקי חילוף ועוד. ספרו לנו מה אתם צריכים.</p>
+        <a href="contact.html" class="btn btn-primary">בקשת מוצר מיוחד</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand"><span class="brand-ball"></span><span class="brand-text">פול בר<small>POOL BAR · STAR</small></span></a>
+          <p style="color: var(--text-muted); margin-top: 1rem; max-width: 320px;">חנות הציוד המקצועית של ישראל.</p>
+        </div>
+        <div><h4>ניווט</h4><ul><li><a href="index.html">בית</a></li><li><a href="about.html">אודות</a></li><li><a href="clubs.html">המועדונים</a></li><li><a href="tables.html">שולחנות</a></li><li><a href="shop.html">חנות ציוד</a></li></ul></div>
+        <div><h4>קטגוריות</h4><ul><li><a href="#cues">מקלות</a></li><li><a href="#balls">כדורים</a></li><li><a href="#chalk">גירים</a></li><li><a href="#cloth">בדים</a></li></ul></div>
+        <div><h4>צור קשר</h4><ul><li><a href="tel:0529008202">052-900-8202</a></li><li><a href="#">חדרה - קומבה 6</a></li><li><a href="#">בנימינה - מרכז הפיל</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; <span id="year"></span> פול בר. כל הזכויות שמורות.</p></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
