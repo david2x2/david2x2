@@ -2047,3 +2047,272 @@ section { padding: clamp(4rem, 9vw, 8rem) 0; position: relative; z-index: 1; }
 }
 .club-pro-card:hover .club-pro-visual-real img { transform: scale(1.08); }
 
+
+/* ============================================
+   PRO MAX UPGRADE - Premium Typography & Colors
+   Following UI/UX Pro Max design principles
+   ============================================ */
+
+/* Premium serif typography for headers - luxury positioning */
+.hero-cursive,
+.hero-tagline {
+  font-family: 'Playfair Display', 'Frank Ruhl Libre', 'Heebo', serif;
+}
+
+/* Refined hero - cinematic feel */
+.hero-pro {
+  min-height: 100vh;
+}
+.hero-bg-img {
+  opacity: 0.45;
+  filter: brightness(0.55) saturate(1.2) contrast(1.1);
+  animation: heroZoom 30s ease-in-out infinite alternate;
+}
+@keyframes heroZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+/* Premium hero title - serif elegance */
+.hero-title-pro {
+  font-family: 'Playfair Display', 'Frank Ruhl Libre', serif;
+  font-weight: 700;
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+/* Better tagline - clean uppercase, refined letterspacing */
+.hero-tagline {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 500;
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
+  letter-spacing: 0.4em;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding: 0.4rem 1.6rem;
+  display: inline-block;
+  border-top: 1px solid rgba(212, 175, 55, 0.4);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+/* Refined cursive */
+.hero-cursive {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+  font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #ffec80 0%, #d4af37 30%, #b8941f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 4px 20px rgba(212, 175, 55, 0.35));
+}
+
+/* Cleaner subtitle */
+.hero-subtitle-pro {
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.8;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 640px;
+  margin: 0 auto 2.5rem;
+}
+
+/* Section titles - serif for premium */
+h1.hero-title, .section-header h2 {
+  font-family: 'Playfair Display', 'Frank Ruhl Libre', serif;
+  font-weight: 700;
+}
+
+/* Refined transitions per design system: 200-300ms */
+.cat-card,
+.club-pro-card,
+.product-card,
+.card,
+.btn {
+  transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              border-color 0.25s ease,
+              box-shadow 0.25s ease,
+              background 0.25s ease !important;
+}
+
+/* Reduce neon flashing - more refined */
+.text-neon {
+  animation: none;
+  text-shadow: 0 0 12px rgba(57, 255, 20, 0.4);
+}
+
+/* Premium category cards - higher contrast image treatment */
+.cat-image-real img {
+  filter: brightness(0.75) saturate(1.05) contrast(1.05);
+}
+.cat-card:hover .cat-image-real img {
+  filter: brightness(0.95) saturate(1.15) contrast(1.1);
+  transform: scale(1.06);
+}
+
+/* Cat info with serif accent */
+.cat-info h3 {
+  font-family: 'Playfair Display', 'Frank Ruhl Libre', serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+.cat-info p {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: rgba(212, 175, 55, 0.85);
+}
+
+/* Refined trust bar - clean institutional feel */
+.trust-bar {
+  background:
+    linear-gradient(135deg, rgba(20, 26, 22, 0.95), rgba(10, 14, 12, 0.95));
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  padding: 1.8rem 2.2rem;
+}
+.trust-icon {
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: var(--gold);
+}
+.trust-item h4 {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.95);
+  letter-spacing: 0.02em;
+}
+.trust-item p {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* About headline - serif drama */
+.about-text h2 {
+  font-family: 'Playfair Display', 'Frank Ruhl Libre', serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 3.8vw, 3.2rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+.about-text p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+/* About stats - premium box treatment */
+.about-stats {
+  background:
+    linear-gradient(180deg, rgba(20, 26, 22, 0.98), rgba(10, 14, 12, 0.99));
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 16px;
+  padding: 1.6rem 1.8rem;
+}
+.about-stat-icon {
+  background: rgba(212, 175, 55, 0.12);
+  border-color: rgba(212, 175, 55, 0.35);
+  color: var(--gold);
+}
+.about-stat strong {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+/* Premium logo treatment - softer glow */
+.hero-logo-big {
+  filter:
+    drop-shadow(0 0 25px rgba(57, 255, 20, 0.4))
+    drop-shadow(0 10px 40px rgba(0, 0, 0, 0.5));
+}
+
+/* Buttons - more refined */
+.btn-primary {
+  background: linear-gradient(135deg, #4dff2a, #2eb510);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #ffec80, #d4af37, #a8851f);
+  color: #1a1208;
+  font-weight: 700;
+}
+
+/* Section header refinement */
+.section-header h2 {
+  font-family: 'Playfair Display', 'Frank Ruhl Libre', serif;
+  font-weight: 700;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+}
+
+/* Club info refinement */
+.club-pro-info h3 {
+  font-family: 'Playfair Display', 'Frank Ruhl Libre', serif;
+  font-weight: 700;
+}
+.club-pro-info p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.club-pro-info .city {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* Reduce footer harshness */
+.footer h4 {
+  color: var(--gold);
+  font-family: 'Heebo', sans-serif;
+}
+
+/* CTA banner premium */
+.cta-banner h2 {
+  font-family: 'Playfair Display', 'Frank Ruhl Libre', serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+/* Marquee refinement - more institutional */
+.marquee {
+  padding: 1.3rem 0;
+  background:
+    linear-gradient(90deg, rgba(15, 22, 18, 0.6), rgba(20, 26, 22, 0.6), rgba(15, 22, 18, 0.6));
+  border-top: 1px solid rgba(212, 175, 55, 0.18);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+}
+.marquee-item {
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.85);
+}
+.marquee-item span {
+  color: var(--gold);
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+.marquee-item::after {
+  color: rgba(212, 175, 55, 0.5);
+}
+
+/* Better contrast for body text - accessibility 4.5:1+ */
+body {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* Hover micro-interactions - 200ms refined */
+.cat-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 40px rgba(57, 255, 20, 0.1);
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
