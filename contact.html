@@ -3,190 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>צור קשר | פול בר - דבר איתנו על שולחנות וציוד סנוקר</title>
-  <meta name="description" content="צרו קשר עם פול בר לקבלת הצעת מחיר לשולחן סנוקר, ייעוץ או הזמנת ציוד." />
+  <title>צור קשר · פול בר — קבלו הצעת מחיר אישית</title>
+  <meta name="description" content="צרו קשר עם פול בר לקבלת ייעוץ והצעת מחיר לשולחן סנוקר/פול, ציוד מקצועי או חדר משחק. צוות מומחים בשירותכם." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Heebo:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23000'/><circle cx='16' cy='16' r='6' fill='%23fff'/><text x='16' y='20' text-anchor='middle' font-family='Arial' font-weight='900' font-size='9' fill='%23000'>8</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%230a0d0b' stroke='%23c9a96e' stroke-width='1.5'/><text x='16' y='21' text-anchor='middle' font-family='Georgia' font-weight='400' font-size='14' fill='%23c9a96e' font-style='italic'>8</text></svg>" />
 </head>
 <body>
-  <div class="preloader" id="preloader"><div class="preloader-ball"></div></div>
 
   <nav class="nav" id="nav">
     <div class="container nav-inner">
-      <a href="index.html" class="brand"><img src="assets/logo.svg" alt="פול בר" class="brand-logo" /></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <a href="index.html" class="brand"><img src="assets/logo.svg" alt="POOL BAR" class="brand-logo" /></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="פתח תפריט"><span></span><span></span><span></span></button>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">בית</a></li>
-        <li><a href="about.html">אודות</a></li>
-        <li><a href="clubs.html">המועדונים</a></li>
         <li><a href="tables.html">שולחנות</a></li>
-        <li><a href="shop.html">חנות ציוד</a></li>
+        <li><a href="shop.html">חנות</a></li>
+        <li><a href="clubs.html">המועדונים</a></li>
         <li><a href="gallery.html">גלריה</a></li>
-        <li><a href="contact.html" class="nav-cta active">צור קשר</a></li>
+        <li><a href="about.html">אודות</a></li>
+        <li><a href="contact.html" class="nav-cta active">קבל הצעה</a></li>
       </ul>
     </div>
   </nav>
 
-  <header class="page-header">
+  <header class="page-hero">
+    <div class="page-hero-bg"><img src="https://images.unsplash.com/photo-1551888437-ce26d56e2cf2?auto=format&fit=crop&w=2000&q=85" alt="" /></div>
     <div class="container">
-      <div class="breadcrumb"><a href="index.html">בית</a><span>/</span><span>צור קשר</span></div>
-      <span class="eyebrow">בואו נדבר</span>
-      <h1>איך אפשר <span class="text-neon">לעזור</span>?</h1>
-      <p>ייעוץ, הצעת מחיר, הזמנת מוצר או סתם שאלה — אנחנו כאן בשבילך. מענה תוך 24 שעות.</p>
+      <span class="eyebrow" style="justify-content: center;">בואו נדבר</span>
+      <h1>נשמח להיות <span class="italic text-gold">בקשר.</span></h1>
+      <p>השאירו פרטים — מומחה שלנו יחזור בתוך 24 שעות עם ייעוץ והצעת מחיר אישית, ללא התחייבות.</p>
+      <div class="breadcrumb"><a href="index.html">בית</a> / <span>צור קשר</span></div>
     </div>
   </header>
 
-  <section style="padding-top: 2rem;">
+  <section class="section">
     <div class="container">
-      <div class="contact-grid">
-        <div class="reveal">
-          <h2 style="margin-bottom: 1.5rem;">שלחו לנו הודעה</h2>
-          <form class="contact-form" id="contactForm">
-            <div class="form-group">
+      <div class="contact-grid reveal">
+
+        <div>
+          <div class="contact-info-card">
+            <div class="contact-info-item">
+              <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+              <div><h4>טלפון</h4><a href="tel:0529008202">052-900-8202</a></div>
+            </div>
+            <div class="contact-info-item">
+              <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+              <div><h4>אימייל</h4><a href="mailto:info@poolbar.co.il">info@poolbar.co.il</a></div>
+            </div>
+            <div class="contact-info-item">
+              <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 1.7.4 3.3 1.2 4.7L2 22l5.4-1.4A10 10 0 1 0 12 2z"/></svg></span>
+              <div><h4>WhatsApp</h4><a href="https://wa.me/972529008202">פנייה מיידית →</a></div>
+            </div>
+            <div class="contact-info-item">
+              <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <div><h4>סניפים</h4><p>חדרה · קומבה 6<br>בנימינה · מרכז הפיל</p></div>
+            </div>
+            <div class="contact-info-item">
+              <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+              <div><h4>שעות פעילות</h4><p>א'–ה' 9:00‑20:00<br>ו' 9:00‑13:00</p></div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/972529008202" class="btn btn-primary btn-block" style="margin-top: 1.4rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 1.7.4 3.3 1.2 4.7L2 22l5.4-1.4A10 10 0 1 0 12 2z"/></svg>
+            פנייה ב‑WhatsApp
+          </a>
+        </div>
+
+        <div style="background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 2.4rem 2.2rem;">
+          <span class="eyebrow">טופס יצירת קשר</span>
+          <h2 style="font-size: 1.8rem; margin-bottom: 1.8rem;">שלחו לנו הודעה</h2>
+          <form id="contactForm" class="form-grid">
+            <div class="form-field">
               <label for="name">שם מלא</label>
-              <input type="text" id="name" name="name" class="form-input" placeholder="ישראל ישראלי" required />
+              <input id="name" type="text" placeholder="ישראל ישראלי" required />
             </div>
-            <div class="form-group">
+            <div class="form-field">
               <label for="phone">טלפון</label>
-              <input type="tel" id="phone" name="phone" class="form-input" placeholder="050-1234567" required />
+              <input id="phone" type="tel" placeholder="050-1234567" required />
             </div>
-            <div class="form-group">
-              <label for="email">דוא"ל</label>
-              <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" />
+            <div class="form-field full">
+              <label for="email">אימייל</label>
+              <input id="email" type="email" placeholder="email@example.com" required />
             </div>
-            <div class="form-group">
-              <label for="subject">נושא הפנייה</label>
-              <select id="subject" name="subject" class="form-select">
-                <option value="">בחר נושא...</option>
-                <option value="table">הצעת מחיר לשולחן סנוקר</option>
-                <option value="cue">מקלות וציוד</option>
-                <option value="club">הזמנת מקום במועדון</option>
-                <option value="event">אירוע פרטי</option>
-                <option value="franchise">מועדון/עסק</option>
-                <option value="other">אחר</option>
+            <div class="form-field full">
+              <label for="interest">במה אתם מתעניינים?</label>
+              <select id="interest">
+                <option>שולחן סנוקר</option>
+                <option>שולחן פול</option>
+                <option>מקלות וציוד</option>
+                <option>חדר משחק / מועדון</option>
+                <option>אביזרים</option>
+                <option>אחר</option>
               </select>
             </div>
-            <div class="form-group">
-              <label for="message">ההודעה שלך</label>
-              <textarea id="message" name="message" class="form-textarea" placeholder="ספר לנו במה אנחנו יכולים לעזור..." required></textarea>
+            <div class="form-field full">
+              <label for="message">הודעה</label>
+              <textarea id="message" placeholder="ספרו לנו על הפרויקט, התקציב, החלל..." required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" style="width: 100%;">
-              שלח הודעה
-              <span class="btn-arrow">←</span>
-            </button>
+            <div class="form-field full">
+              <button type="submit" class="btn btn-primary btn-block btn-lg">שליחה<span class="btn-arrow">←</span></button>
+            </div>
           </form>
         </div>
 
-        <div class="contact-info reveal">
-          <h2 style="margin-bottom: 1.5rem;">פרטי התקשרות</h2>
-
-          <div class="contact-card">
-            <div class="contact-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
-              </svg>
-            </div>
-            <div>
-              <h4>טלפון</h4>
-              <a href="tel:0529008202">052-900-8202</a>
-              <p>זמינים בכל שעות הפעילות</p>
-            </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
-              </svg>
-            </div>
-            <div>
-              <h4>WhatsApp</h4>
-              <a href="https://wa.me/972529008202" target="_blank" rel="noopener">052-900-8202</a>
-              <p>מענה מהיר בוואטסאפ</p>
-            </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-            </div>
-            <div>
-              <h4>סניף חדרה (ראשי)</h4>
-              <p style="color: var(--white);">קומבה 6, חדרה</p>
-              <p>מועדון + חנות ציוד · 15:00 עד מאוחר</p>
-            </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-            </div>
-            <div>
-              <h4>סניף בנימינה</h4>
-              <p style="color: var(--white);">מרכז מסחרי הפיל, בנימינה גבעת עדה</p>
-              <p>מועדון יוקרתי · 16:00 עד מאוחר</p>
-            </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-            </div>
-            <div>
-              <h4>דוא"ל</h4>
-              <a href="mailto:info@poolbar.co.il">info@poolbar.co.il</a>
-              <p>מענה לפניות מקצועיות</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section>
+  <section class="section" style="padding-top: 0;">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">שאלות נפוצות</span>
-        <h2>תשובות מהירות</h2>
-      </div>
-      <div class="cards-grid reveal-stagger">
-        <div class="card">
-          <h3>כמה זמן לוקח לקבל שולחן?</h3>
-          <p>שולחנות זמינים במלאי — תוך שבועיים. הזמנה ישירה מהיצרן STAR — 6-8 שבועות.</p>
-        </div>
-        <div class="card">
-          <h3>האם ההתקנה כלולה?</h3>
-          <p>כן! כל שולחן שאנחנו מוכרים מגיע עם משלוח, התקנה מקצועית ואיזון מלא ברמת טורניר.</p>
-        </div>
-        <div class="card">
-          <h3>איזה אחריות יש על השולחנות?</h3>
-          <p>אחריות יצרן STAR למשך 10 שנים על השיש ועל המסגרת. אחריות 5 שנים על הבד.</p>
-        </div>
-        <div class="card">
-          <h3>אפשר לראות שולחן לפני קנייה?</h3>
-          <p>בטח! בואו לבקר במועדון חדרה — שם תוכלו לבחון את הדגמים ולשחק עליהם.</p>
-        </div>
-        <div class="card">
-          <h3>מספקים גם בחו"ל?</h3>
-          <p>כיום אנחנו פועלים בישראל בלבד, אבל אנחנו עובדים על הרחבת פעילות. צרו קשר לבירור.</p>
-        </div>
-        <div class="card">
-          <h3>אפשר לשכור שולחן?</h3>
-          <p>שכירות אפשרית לאירועים מיוחדים וטורנירים. צרו קשר לבירור זמינות ותנאים.</p>
-        </div>
+      <div class="reveal" style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--line); aspect-ratio: 21/9; background: linear-gradient(135deg, var(--surface), var(--surface-2)); position: relative;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3370.1!2d34.91!3d32.44!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDI2JzI0LjAiTiAzNMKwNTQnMzYuMCJF!5e0!3m2!1she!2sil!4v1700000000000"
+          width="100%" height="100%" style="border:0; filter: invert(1) hue-rotate(180deg) saturate(.6);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
@@ -195,14 +128,18 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a href="index.html" class="brand"><img src="assets/logo.svg" alt="פול בר" class="brand-logo" /></a>
-          <p style="color: var(--text-muted); margin-top: 1rem; max-width: 320px;">25 שנות אהבה לסנוקר. הכתובת המקצועית של ישראל.</p>
+          <img src="assets/logo.svg" alt="POOL BAR" class="footer-logo" />
+          <p style="font-size: .94rem; max-width: 320px;">היבואן הרשמי של STAR (Xingpai) בישראל.</p>
+          <div class="social">
+            <a href="#" aria-label="Instagram"><svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="https://wa.me/972529008202" aria-label="WhatsApp"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 1.7.4 3.3 1.2 4.7L2 22l5.4-1.4A10 10 0 1 0 12 2zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.3-.5.1-1.1.1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.2.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l.8-1c.2-.2.4-.2.6-.1l1.9.9c.3.2.5.2.6.4.1.2.1.9-.2 1.5z"/></svg></a>
+          </div>
         </div>
-        <div><h4>ניווט</h4><ul><li><a href="index.html">בית</a></li><li><a href="about.html">אודות</a></li><li><a href="clubs.html">המועדונים</a></li><li><a href="tables.html">שולחנות</a></li><li><a href="shop.html">חנות ציוד</a></li></ul></div>
-        <div><h4>קטגוריות</h4><ul><li><a href="shop.html#cues">מקלות</a></li><li><a href="shop.html#balls">כדורים</a></li><li><a href="shop.html#chalk">גירים</a></li></ul></div>
-        <div><h4>צור קשר</h4><ul><li><a href="tel:0529008202">052-900-8202</a></li><li><a href="#">חדרה - קומבה 6</a></li><li><a href="#">בנימינה - מרכז הפיל</a></li></ul></div>
+        <div><h4>קישורים</h4><ul><li><a href="index.html">בית</a></li><li><a href="tables.html">שולחנות</a></li><li><a href="shop.html">חנות</a></li><li><a href="gallery.html">גלריה</a></li></ul></div>
+        <div><h4>מוצרים</h4><ul><li><a href="tables.html">שולחנות סנוקר</a></li><li><a href="shop.html#cues">מקלות</a></li><li><a href="shop.html#accessories">אביזרים</a></li><li><a href="clubs.html">חדרי משחק</a></li></ul></div>
+        <div><h4>פרטי קשר</h4><ul><li><a href="tel:0529008202">📞 052-900-8202</a></li><li><a href="mailto:info@poolbar.co.il">info@poolbar.co.il</a></li><li><span style="color: var(--text-3);">חדרה · בנימינה</span></li></ul></div>
       </div>
-      <div class="footer-bottom"><p>&copy; <span id="year"></span> פול בר. כל הזכויות שמורות.</p></div>
+      <div class="footer-bottom"><p>© <span id="year">2026</span> POOL BAR. כל הזכויות שמורות.</p><div class="payment-icons"><span>VISA</span><span>MASTERCARD</span><span>PAYPAL</span><span>BIT</span></div></div>
     </div>
   </footer>
 

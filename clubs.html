@@ -3,246 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>המועדונים | פול בר - מועדוני סנוקר בחדרה ובנימינה</title>
-  <meta name="description" content="שני מועדוני הסנוקר של פול בר - חדרה ובנימינה. שולחנות STAR מקצועיים, בר ואווירה." />
+  <title>המועדונים · פול בר חדרה ובנימינה — חוויית סנוקר ברמה הגבוהה</title>
+  <meta name="description" content="שני מועדוני סנוקר של פול בר — חדרה ובנימינה. שולחנות STAR מקצועיים, בר ואווירה ייחודית. בקרו אצלנו." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Heebo:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23000'/><circle cx='16' cy='16' r='6' fill='%23fff'/><text x='16' y='20' text-anchor='middle' font-family='Arial' font-weight='900' font-size='9' fill='%23000'>8</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%230a0d0b' stroke='%23c9a96e' stroke-width='1.5'/><text x='16' y='21' text-anchor='middle' font-family='Georgia' font-weight='400' font-size='14' fill='%23c9a96e' font-style='italic'>8</text></svg>" />
 </head>
 <body>
-  <div class="preloader" id="preloader"><div class="preloader-ball"></div></div>
 
   <nav class="nav" id="nav">
     <div class="container nav-inner">
-      <a href="index.html" class="brand">
-        <span class="brand-ball"></span>
-        <span class="brand-text">פול בר<small>POOL BAR · STAR</small></span>
-      </a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <a href="index.html" class="brand"><img src="assets/logo.svg" alt="POOL BAR" class="brand-logo" /></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="פתח תפריט"><span></span><span></span><span></span></button>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">בית</a></li>
-        <li><a href="about.html">אודות</a></li>
-        <li><a href="clubs.html" class="active">המועדונים</a></li>
         <li><a href="tables.html">שולחנות</a></li>
-        <li><a href="shop.html">חנות ציוד</a></li>
+        <li><a href="shop.html">חנות</a></li>
+        <li><a href="clubs.html" class="active">המועדונים</a></li>
         <li><a href="gallery.html">גלריה</a></li>
-        <li><a href="contact.html" class="nav-cta">צור קשר</a></li>
+        <li><a href="about.html">אודות</a></li>
+        <li><a href="contact.html" class="nav-cta">קבל הצעה</a></li>
       </ul>
     </div>
   </nav>
 
-  <header class="page-header">
+  <header class="page-hero">
+    <div class="page-hero-bg"><img src="https://images.unsplash.com/photo-1517232115160-ff93364542dd?auto=format&fit=crop&w=2000&q=85" alt="" /></div>
     <div class="container">
-      <div class="breadcrumb"><a href="index.html">בית</a><span>/</span><span>המועדונים</span></div>
-      <span class="eyebrow">המקומות שלנו</span>
-      <h1>שני מועדונים. <span class="text-neon">אווירה אחת.</span></h1>
-      <p>חוויית סנוקר ברמה הגבוהה בארץ — שולחנות מקצועיים, בר, חברה טובה וכוס משקה. בואו לבקר!</p>
+      <span class="eyebrow" style="justify-content: center;">המועדונים שלנו</span>
+      <h1>שני מקומות. <span class="italic text-gold">אווירה אחת.</span></h1>
+      <p>בואו לחוות סנוקר אמיתי — באוויר, באור ובאיכות שיש בקושי במקומות אחרים בארץ.</p>
+      <div class="breadcrumb"><a href="index.html">בית</a> / <span>המועדונים</span></div>
     </div>
   </header>
 
-  <section style="padding-top: 2rem;" id="hadera">
+  <section class="section" id="hadera">
     <div class="container">
-      <div class="club-card reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; max-width: 1100px; margin: 0 auto;">
-        <div class="club-visual" style="height: auto; min-height: 420px;">
-          <!-- SVG snooker table illustration -->
-          <svg width="100%" height="100%" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0;">
-            <defs>
-              <radialGradient id="feltH" cx="50%" cy="50%" r="60%">
-                <stop offset="0%" stop-color="#1a7a4f"/>
-                <stop offset="100%" stop-color="#0a4d2a"/>
-              </radialGradient>
-              <linearGradient id="rail" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#5a3a20"/>
-                <stop offset="100%" stop-color="#2a1810"/>
-              </linearGradient>
-            </defs>
-            <rect width="400" height="300" fill="#060a08"/>
-            <rect x="30" y="60" width="340" height="180" rx="8" fill="url(#rail)"/>
-            <rect x="50" y="80" width="300" height="140" rx="4" fill="url(#feltH)"/>
-            <circle cx="60" cy="90" r="8" fill="#000"/>
-            <circle cx="200" cy="90" r="8" fill="#000"/>
-            <circle cx="340" cy="90" r="8" fill="#000"/>
-            <circle cx="60" cy="210" r="8" fill="#000"/>
-            <circle cx="200" cy="210" r="8" fill="#000"/>
-            <circle cx="340" cy="210" r="8" fill="#000"/>
-            <!-- balls -->
-            <circle cx="150" cy="150" r="8" fill="#fff"/>
-            <circle cx="250" cy="140" r="8" fill="#ffd60a"/>
-            <circle cx="265" cy="155" r="8" fill="#d62828"/>
-            <circle cx="280" cy="140" r="8" fill="#ff9a3c"/>
-            <circle cx="280" cy="170" r="8" fill="#2a8f47"/>
-            <circle cx="265" cy="185" r="8" fill="#8a4a2a"/>
-            <circle cx="250" cy="170" r="8" fill="#3a3aaa"/>
-            <circle cx="250" cy="200" r="8" fill="#000">
-              <animate attributeName="cx" values="250;200;250" dur="4s" repeatCount="indefinite"/>
-            </circle>
-            <!-- cue -->
-            <line x1="100" y1="150" x2="160" y2="148" stroke="#d4af37" stroke-width="3" stroke-linecap="round">
-              <animate attributeName="x1" values="100;130;100" dur="4s" repeatCount="indefinite"/>
-              <animate attributeName="x2" values="160;150;160" dur="4s" repeatCount="indefinite"/>
-            </line>
-            <!-- glow -->
-            <ellipse cx="200" cy="150" rx="180" ry="50" fill="#39ff14" opacity="0.1" filter="blur(20)"/>
-          </svg>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <span class="eyebrow">חדרה · הסניף הראשי</span>
+          <h2>פול בר <span class="italic text-gold">חדרה</span></h2>
+          <p>המועדון הראשון שלנו, פתוח מאז 1999. חלל גדול, חמישה שולחנות סנוקר מקצועיים STAR, בר מלא ואווירה שלא מצליחים לתאר במילים — צריך להיכנס.</p>
+          <p>כאן ממוקמת גם חנות הציוד המקצועית שלנו, וכאן מתקיימים הטורנירים הפנימיים השבועיים.</p>
+          <div style="display: flex; flex-direction: column; gap: .7rem; margin-bottom: 1.6rem;">
+            <div style="display: flex; gap: 1rem; align-items: center;">
+              <span style="width: 36px; height: 36px; border-radius: 8px; background: rgba(201, 169, 110, 0.1); display: grid; place-items: center; color: var(--gold);">📍</span>
+              <div><strong style="color: var(--text);">כתובת</strong><br><span style="font-size: .9rem; color: var(--text-2);">קומבה 6, חדרה</span></div>
+            </div>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+              <span style="width: 36px; height: 36px; border-radius: 8px; background: rgba(201, 169, 110, 0.1); display: grid; place-items: center; color: var(--gold);">🕒</span>
+              <div><strong style="color: var(--text);">שעות פתיחה</strong><br><span style="font-size: .9rem; color: var(--text-2);">ראשון–חמישי 17:00‑01:00 · שישי‑שבת 19:00‑03:00</span></div>
+            </div>
+          </div>
+          <div style="display: flex; gap: .7rem; flex-wrap: wrap;">
+            <a href="tel:0529008202" class="btn btn-primary">חייגו</a>
+            <a href="https://waze.com" class="btn btn-outline">נווט ב‑Waze</a>
+          </div>
         </div>
-        <div class="club-info" style="padding: 2.5rem;">
-          <span class="city">חדרה · הסניף הראשי</span>
-          <h3 style="font-size: 2rem;">פול בר חדרה</h3>
-          <p style="color: var(--text-muted); margin: 1rem 0;">
-            הבית הראשון שלנו. מאז שנת 2000, מועדון פול בר חדרה הוא הכתובת המקצועית של חובבי סנוקר וביליארד באזור. שולחנות מקצועיים, בר מלא, אווירה מקסימה וצוות חם שיודע לקבל פנים.
-          </p>
-          <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
-            כאן גם ממוקמת חנות הציוד שלנו, שם נשמח להציג בפניך את כל המבחר.
-          </p>
-          <div class="club-features">
-            <span>5 שולחנות סנוקר</span>
-            <span>2 שולחנות פול</span>
-            <span>בר מלא</span>
-            <span>טורנירים שבועיים</span>
-            <span>חנות ציוד</span>
-            <span>חניה</span>
+        <div class="about-visual" style="aspect-ratio: 4/3;">
+          <img src="https://images.unsplash.com/photo-1517232115160-ff93364542dd?auto=format&fit=crop&w=1200&q=85" alt="פול בר חדרה">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="binyamina" style="background: linear-gradient(180deg, transparent, rgba(20,24,21,0.4), transparent);">
+    <div class="container">
+      <div class="about-grid reveal" style="grid-template-columns: 1.05fr 1fr;">
+        <div class="about-visual" style="aspect-ratio: 4/3;">
+          <img src="https://images.unsplash.com/photo-1518604200953-2b9f3e6e8e9b?auto=format&fit=crop&w=1200&q=85" alt="פול בר בנימינה">
+        </div>
+        <div class="about-text">
+          <span class="eyebrow">בנימינה · יוקרתי</span>
+          <h2>פול בר <span class="italic text-gold">בנימינה</span></h2>
+          <p>הסניף החדש שלנו, פתוח מאז 2015 — מועדון יוקרתי, אינטימי יותר, במרכז הפיל המקסים של בנימינה. שלושה שולחנות סנוקר STAR, בר אישי וחניה צמודה.</p>
+          <p>המקום האידיאלי לערב סוף שבוע, למסיבת רווקים שונה או סתם לכוס בירה עם חברים מעל מסגרת ירוקה.</p>
+          <div style="display: flex; flex-direction: column; gap: .7rem; margin-bottom: 1.6rem;">
+            <div style="display: flex; gap: 1rem; align-items: center;">
+              <span style="width: 36px; height: 36px; border-radius: 8px; background: rgba(201, 169, 110, 0.1); display: grid; place-items: center; color: var(--gold);">📍</span>
+              <div><strong style="color: var(--text);">כתובת</strong><br><span style="font-size: .9rem; color: var(--text-2);">מרכז הפיל, בנימינה</span></div>
+            </div>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+              <span style="width: 36px; height: 36px; border-radius: 8px; background: rgba(201, 169, 110, 0.1); display: grid; place-items: center; color: var(--gold);">🕒</span>
+              <div><strong style="color: var(--text);">שעות פתיחה</strong><br><span style="font-size: .9rem; color: var(--text-2);">חמישי 20:00‑02:00 · שישי‑שבת 21:00‑03:00</span></div>
+            </div>
           </div>
-          <div class="club-meta">
-            <div><strong>כתובת:</strong> קומבה 6, חדרה</div>
-            <div><strong>שעות פתיחה:</strong> ימים א'-ש' החל מ-15:00 עד מאוחר</div>
-            <div><strong>טלפון:</strong> <a href="tel:0529008202" style="color: var(--neon-green);">052-900-8202</a></div>
-          </div>
-          <div style="margin-top: 2rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
-            <a href="tel:0529008202" class="btn btn-primary">חייגו עכשיו</a>
-            <a href="https://www.google.com/maps/search/%D7%A7%D7%95%D7%9E%D7%91%D7%94+6+%D7%97%D7%93%D7%A8%D7%94" target="_blank" rel="noopener" class="btn btn-outline">נווט אליי</a>
+          <div style="display: flex; gap: .7rem; flex-wrap: wrap;">
+            <a href="tel:0529008202" class="btn btn-primary">חייגו</a>
+            <a href="https://waze.com" class="btn btn-outline">נווט ב‑Waze</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="binyamina">
-    <div class="container">
-      <div class="club-card reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; max-width: 1100px; margin: 0 auto; direction: ltr;">
-        <div class="club-info" style="padding: 2.5rem; direction: rtl;">
-          <span class="city">בנימינה · יוקרתי</span>
-          <h3 style="font-size: 2rem;">פול בר בנימינה</h3>
-          <p style="color: var(--text-muted); margin: 1rem 0;">
-            המועדון השני שלנו, ממוקם במרכז המסחרי הפיל בבנימינה. אווירה אינטימית, ציוד פרימיום ועיצוב מודרני — מקום שמרגישים בו את ההבדל ברגע שנכנסים.
-          </p>
-          <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
-            מושלם לערב חברים, לפגישה אחר העבודה או לאימון מקצועי.
-          </p>
-          <div class="club-features">
-            <span>3 שולחנות סנוקר</span>
-            <span>שולחן פול 9</span>
-            <span>בר מלא</span>
-            <span>אווירה אינטימית</span>
-            <span>חניה נוחה</span>
-            <span>מסכים גדולים</span>
-          </div>
-          <div class="club-meta">
-            <div><strong>כתובת:</strong> מרכז מסחרי הפיל, בנימינה גבעת עדה</div>
-            <div><strong>שעות פתיחה:</strong> ימים א'-ש' החל מ-16:00 עד מאוחר</div>
-            <div><strong>טלפון:</strong> <a href="tel:0529008202" style="color: var(--neon-green);">052-900-8202</a></div>
-          </div>
-          <div style="margin-top: 2rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
-            <a href="tel:0529008202" class="btn btn-primary">חייגו עכשיו</a>
-            <a href="https://www.google.com/maps/search/%D7%9E%D7%A8%D7%9B%D7%96+%D7%94%D7%A4%D7%99%D7%9C+%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%A0%D7%94" target="_blank" rel="noopener" class="btn btn-outline">נווט אליי</a>
-          </div>
-        </div>
-        <div class="club-visual" style="height: auto; min-height: 420px; direction: rtl;">
-          <svg width="100%" height="100%" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0;">
-            <defs>
-              <radialGradient id="feltB" cx="50%" cy="50%" r="60%">
-                <stop offset="0%" stop-color="#1a7a4f"/>
-                <stop offset="100%" stop-color="#0a4d2a"/>
-              </radialGradient>
-              <linearGradient id="rail2" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#5a3a20"/>
-                <stop offset="100%" stop-color="#2a1810"/>
-              </linearGradient>
-            </defs>
-            <rect width="400" height="300" fill="#060a08"/>
-            <rect x="30" y="60" width="340" height="180" rx="8" fill="url(#rail2)"/>
-            <rect x="50" y="80" width="300" height="140" rx="4" fill="url(#feltB)"/>
-            <!-- pockets -->
-            <circle cx="60" cy="90" r="8" fill="#000"/>
-            <circle cx="200" cy="90" r="8" fill="#000"/>
-            <circle cx="340" cy="90" r="8" fill="#000"/>
-            <circle cx="60" cy="210" r="8" fill="#000"/>
-            <circle cx="200" cy="210" r="8" fill="#000"/>
-            <circle cx="340" cy="210" r="8" fill="#000"/>
-            <!-- rack -->
-            <g>
-              <circle cx="270" cy="150" r="7" fill="#ffd60a"/>
-              <circle cx="285" cy="142" r="7" fill="#0a2aaa"/>
-              <circle cx="285" cy="158" r="7" fill="#d62828"/>
-              <circle cx="300" cy="134" r="7" fill="#8a4a2a"/>
-              <circle cx="300" cy="150" r="7" fill="#000"/>
-              <circle cx="300" cy="166" r="7" fill="#3a8f3a"/>
-              <circle cx="315" cy="126" r="7" fill="#ff9a3c"/>
-              <circle cx="315" cy="142" r="7" fill="#aa3a3a"/>
-              <circle cx="315" cy="158" r="7" fill="#ffd60a"/>
-              <circle cx="315" cy="174" r="7" fill="#3a3aaa"/>
-            </g>
-            <circle cx="130" cy="150" r="8" fill="#fff">
-              <animate attributeName="cx" values="130;260;130" dur="4s" repeatCount="indefinite"/>
-            </circle>
-            <line x1="80" y1="152" x2="125" y2="150" stroke="#d4af37" stroke-width="3" stroke-linecap="round">
-              <animate attributeName="x1" values="80;110;80" dur="4s" repeatCount="indefinite"/>
-              <animate attributeName="x2" values="125;245;125" dur="4s" repeatCount="indefinite"/>
-            </line>
-            <ellipse cx="200" cy="150" rx="180" ry="50" fill="#39ff14" opacity="0.1"/>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Vibe -->
-  <section>
+  <section class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="eyebrow">האווירה</span>
-        <h2>למה לבוא דווקא אלינו?</h2>
+        <span class="eyebrow">חדרי משחק בהזמנה אישית</span>
+        <h2>רוצים מועדון או חדר משחק <span class="italic text-gold">משלכם?</span></h2>
+        <div class="divider"></div>
+        <p>אנחנו מתכננים ומקימים מועדונים פרטיים וחדרי משחק יוקרתיים — מהשירטוט הראשון ועד מסירת המפתח. תאורה, בר, ספריות, פינות ישיבה והכל כמובן סביב שולחנות STAR מקצועיים.</p>
       </div>
-      <div class="cards-grid reveal-stagger">
-        <div class="card">
-          <div class="card-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="9" width="20" height="10" rx="2"/></svg>
-          </div>
-          <h3>שולחנות מקצועיים</h3>
-          <p>כל השולחנות שלנו הם שולחנות טורניר רשמיים — שיש, בד Strachan ומסילות מדויקות.</p>
+      <div class="features-grid reveal">
+        <div class="feature">
+          <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <h3>תכנון ארכיטקטוני</h3>
+          <p>אדריכל פנים ייעודי לחללי משחק — חלוקת חלל, גובה תקרות, איוורור ואקוסטיקה.</p>
         </div>
-        <div class="card">
-          <div class="card-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 6-6"/></svg>
-          </div>
-          <h3>שיפור מתמיד</h3>
-          <p>אנחנו משדרגים, מתחזקים ומחליפים ציוד באופן קבוע — כדי שתחווה תמיד את הטוב ביותר.</p>
+        <div class="feature">
+          <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg></div>
+          <h3>תאורה מקצועית</h3>
+          <p>מערכת תאורה ייעודית מעל כל שולחן — תקן World Snooker, אווירה חמה ואחידה.</p>
         </div>
-        <div class="card">
-          <div class="card-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-          </div>
-          <h3>קהילה אמיתית</h3>
-          <p>אצלנו פוגשים שחקנים מכל הרמות — מתחילים שמחפשים שיעור, ועד אלופי ארץ.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 22h20L12 2z"/><line x1="12" y1="9" x2="12" y2="13"/></svg>
-          </div>
-          <h3>טורנירים שבועיים</h3>
-          <p>טורנירים סדירים בשני המועדונים — באו להתחרות, לצפות או פשוט להנות מהאווירה.</p>
+        <div class="feature">
+          <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+          <h3>ריהוט ובר</h3>
+          <p>פינות ישיבה, ספות, בר ושירותים — עיצוב מותאם אישית לכל סגנון וכל תקציב.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section>
+  <section class="section">
     <div class="container">
       <div class="cta-banner reveal">
-        <h2>מעוניינים <span class="text-neon">להזמין שולחן</span>?</h2>
-        <p>אנחנו פתוחים להזמנות מראש לערבים שלמים, אירועים פרטיים וימי הולדת. צרו קשר ונארגן לכם חוויה.</p>
-        <a href="contact.html" class="btn btn-primary">לפרטים והזמנה</a>
+        <h2>בואו לבקר <span class="italic text-gold">בלי התחייבות.</span></h2>
+        <p>אנחנו מזמינים אתכם לסיור באחד המועדונים שלנו — תקבלו טעימה אמיתית מאיכות השולחנות והאווירה.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg">קביעת ביקור<span class="btn-arrow">←</span></a>
+          <a href="tel:0529008202" class="btn btn-outline btn-lg">052-900-8202</a>
+        </div>
       </div>
     </div>
   </section>
@@ -251,14 +144,18 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a href="index.html" class="brand"><img src="assets/logo.svg" alt="פול בר" class="brand-logo" /></a>
-          <p style="color: var(--text-muted); margin-top: 1rem; max-width: 320px;">הכתובת המובילה בישראל לציוד סנוקר.</p>
+          <img src="assets/logo.svg" alt="POOL BAR" class="footer-logo" />
+          <p style="font-size: .94rem; max-width: 320px;">היבואן הרשמי של STAR (Xingpai) בישראל.</p>
+          <div class="social">
+            <a href="#" aria-label="Instagram"><svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="https://wa.me/972529008202" aria-label="WhatsApp"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 1.7.4 3.3 1.2 4.7L2 22l5.4-1.4A10 10 0 1 0 12 2zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.3-.5.1-1.1.1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.2.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l.8-1c.2-.2.4-.2.6-.1l1.9.9c.3.2.5.2.6.4.1.2.1.9-.2 1.5z"/></svg></a>
+          </div>
         </div>
-        <div><h4>ניווט</h4><ul><li><a href="index.html">בית</a></li><li><a href="about.html">אודות</a></li><li><a href="clubs.html">המועדונים</a></li><li><a href="tables.html">שולחנות</a></li><li><a href="shop.html">חנות ציוד</a></li></ul></div>
-        <div><h4>קטגוריות</h4><ul><li><a href="shop.html#tables">שולחנות</a></li><li><a href="shop.html#cues">מקלות</a></li><li><a href="shop.html#balls">כדורים</a></li><li><a href="shop.html#chalk">גירים</a></li></ul></div>
-        <div><h4>צור קשר</h4><ul><li><a href="tel:0529008202">052-900-8202</a></li><li><a href="#">חדרה - קומבה 6</a></li><li><a href="#">בנימינה - מרכז הפיל</a></li></ul></div>
+        <div><h4>קישורים</h4><ul><li><a href="index.html">בית</a></li><li><a href="tables.html">שולחנות</a></li><li><a href="shop.html">חנות</a></li><li><a href="gallery.html">גלריה</a></li></ul></div>
+        <div><h4>המועדונים</h4><ul><li><a href="#hadera">חדרה</a></li><li><a href="#binyamina">בנימינה</a></li><li><a href="contact.html">תיאום ביקור</a></li></ul></div>
+        <div><h4>צור קשר</h4><ul><li><a href="tel:0529008202">📞 052-900-8202</a></li><li><a href="mailto:info@poolbar.co.il">info@poolbar.co.il</a></li><li><span style="color: var(--text-3);">חדרה · בנימינה</span></li></ul></div>
       </div>
-      <div class="footer-bottom"><p>&copy; <span id="year"></span> פול בר. כל הזכויות שמורות.</p></div>
+      <div class="footer-bottom"><p>© <span id="year">2026</span> POOL BAR. כל הזכויות שמורות.</p><div class="payment-icons"><span>VISA</span><span>MASTERCARD</span><span>PAYPAL</span><span>BIT</span></div></div>
     </div>
   </footer>
 
