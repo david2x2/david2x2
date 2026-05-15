@@ -18,6 +18,10 @@
   --gold-2: #d9bc83;
   --gold-3: #e8d4a3;
   --gold-deep: #8a7044;
+  --green: #5ba87e;
+  --green-2: #7ec99c;
+  --green-3: #a6e0c0;
+  --green-deep: #2d6e4d;
   --felt: #1a7a4f;
   --felt-deep: #0f5132;
 
@@ -128,8 +132,18 @@ p { color: var(--text-2); font-size: 1.025rem; }
 }
 
 .text-gold { color: var(--gold); }
+.text-green { color: var(--green); }
 .text-cream { color: var(--text); }
 .italic { font-style: italic; }
+
+/* Italic-highlighted accents inside headings — refined green */
+h1 .italic.text-gold,
+h2 .italic.text-gold,
+h3 .italic.text-gold,
+.italic.text-gold {
+  color: var(--green);
+  text-shadow: 0 0 24px rgba(91, 168, 126, 0.15);
+}
 
 /* ============================================
    LAYOUT
@@ -375,10 +389,11 @@ p { color: var(--text-2); font-size: 1.025rem; }
   display: block;
   font-family: var(--font-display);
   font-size: 1.8rem;
-  color: var(--gold);
+  color: var(--green);
   font-weight: 500;
   line-height: 1;
   margin-bottom: .3rem;
+  text-shadow: 0 0 24px rgba(91, 168, 126, 0.15);
 }
 .hero-meta-item span {
   font-size: .82rem;
@@ -509,7 +524,7 @@ p { color: var(--text-2); font-size: 1.025rem; }
 }
 .cat-body span {
   font-size: .82rem;
-  color: var(--gold);
+  color: var(--green);
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
@@ -617,9 +632,10 @@ p { color: var(--text-2); font-size: 1.025rem; }
   display: block;
   font-family: var(--font-display);
   font-size: clamp(1.5rem, 2.4vw, 2rem);
-  color: var(--gold);
+  color: var(--green);
   font-weight: 500;
   line-height: 1;
+  text-shadow: 0 0 24px rgba(91, 168, 126, 0.18);
 }
 .stat span {
   font-size: .8rem;
@@ -665,9 +681,9 @@ p { color: var(--text-2); font-size: 1.025rem; }
   border-radius: 12px;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, rgba(201, 169, 110, 0.14), rgba(201, 169, 110, 0.04));
-  border: 1px solid var(--line-strong);
-  color: var(--gold);
+  background: linear-gradient(135deg, rgba(91, 168, 126, 0.16), rgba(91, 168, 126, 0.04));
+  border: 1px solid rgba(91, 168, 126, 0.25);
+  color: var(--green-2);
   margin-bottom: 1.2rem;
 }
 .feature h3 {
@@ -713,7 +729,7 @@ p { color: var(--text-2); font-size: 1.025rem; }
 }
 .product:hover .product-img img { transform: scale(1.06); }
 .product-body { padding: 1.4rem 1.5rem 1.6rem; flex: 1; display: flex; flex-direction: column; }
-.product-cat { font-size: .76rem; letter-spacing: 0.18em; color: var(--gold); text-transform: uppercase; margin-bottom: .6rem; }
+.product-cat { font-size: .76rem; letter-spacing: 0.18em; color: var(--green); text-transform: uppercase; margin-bottom: .6rem; }
 .product-body h3 {
   font-family: var(--font-display);
   font-size: 1.4rem;
@@ -766,7 +782,7 @@ p { color: var(--text-2); font-size: 1.025rem; }
 .club-info .city {
   font-size: .76rem;
   letter-spacing: 0.22em;
-  color: var(--gold);
+  color: var(--green);
   text-transform: uppercase;
   margin-bottom: .8rem;
 }
@@ -783,9 +799,9 @@ p { color: var(--text-2); font-size: 1.025rem; }
 .club-features span {
   font-size: .78rem;
   padding: .35rem .8rem;
-  background: rgba(201, 169, 110, 0.07);
-  border: 1px solid var(--line-strong);
-  color: var(--gold-2);
+  background: rgba(91, 168, 126, 0.08);
+  border: 1px solid rgba(91, 168, 126, 0.22);
+  color: var(--green-2);
   border-radius: 999px;
 }
 .club-actions { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: auto; }
@@ -1164,7 +1180,7 @@ p { color: var(--text-2); font-size: 1.025rem; }
 .marquee-item::after {
   content: '';
   width: 5px; height: 5px;
-  background: var(--gold);
+  background: var(--green);
   border-radius: 50%;
   margin-right: 4rem;
 }
