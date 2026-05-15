@@ -7,12 +7,11 @@
   <meta name="description" content="פול בר - 25 שנות מצוינות בעולם הסנוקר. זכיין רשמי של חברת STAR. שולחנות סנוקר, מקלות, כדורים וציוד מקצועי. מועדונים בחדרה ובנימינה." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800;900&family=Caveat:wght@500;600;700&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800;900&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23000'/><circle cx='16' cy='16' r='6' fill='%23fff'/><text x='16' y='20' text-anchor='middle' font-family='Arial' font-weight='900' font-size='9' fill='%23000'>8</text></svg>" />
 </head>
 <body>
-  <!-- Preloader -->
   <div class="preloader" id="preloader">
     <div class="preloader-ball"></div>
     <div class="preloader-text">POOL BAR</div>
@@ -30,7 +29,7 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html" class="active">בית</a></li>
         <li><a href="tables.html">שולחנות סנוקר</a></li>
-        <li><a href="tables.html#pool">שולחנות פול</a></li>
+        <li><a href="tables.html">שולחנות פול</a></li>
         <li><a href="shop.html#cues">מקלות</a></li>
         <li><a href="shop.html">אביזרים</a></li>
         <li><a href="clubs.html">חדרי משחק</a></li>
@@ -40,17 +39,14 @@
     </div>
   </nav>
 
-  <!-- HERO with atmospheric background -->
+  <!-- HERO - real billiard hall background -->
   <header class="hero-pro">
-    <div class="hero-bg">
-      <div class="hero-bg-image"></div>
-      <div class="hero-bg-overlay"></div>
-      <!-- Ambient lights -->
+    <div class="hero-bg-pro">
+      <img src="https://images.unsplash.com/photo-1606503153255-59d8b8b82176?auto=format&fit=crop&w=1800&q=80" alt="" class="hero-bg-img" onerror="this.style.display='none'" />
+      <div class="hero-bg-overlay-pro"></div>
       <div class="amb-light amb-light-1"></div>
       <div class="amb-light amb-light-2"></div>
       <div class="amb-light amb-light-3"></div>
-      <!-- Particles -->
-      <div class="particles" id="particles"></div>
     </div>
 
     <div class="container">
@@ -72,52 +68,17 @@
         </div>
       </div>
     </div>
-
     <div class="scroll-indicator">SCROLL</div>
   </header>
 
-  <!-- CATEGORY CARDS - row of 5 -->
+  <!-- 5 CATEGORY CARDS with REAL photos -->
   <section class="categories-section">
     <div class="container">
       <div class="categories-grid reveal-stagger">
         <a href="tables.html" class="cat-card">
-          <div class="cat-image">
-            <svg width="100%" height="100%" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice">
-              <defs>
-                <radialGradient id="cf1" cx="50%" cy="50%" r="70%"><stop offset="0%" stop-color="#1a8a5a"/><stop offset="100%" stop-color="#062a18"/></radialGradient>
-                <linearGradient id="cw1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#8a5a30"/><stop offset="100%" stop-color="#2a1810"/></linearGradient>
-                <radialGradient id="rb1" cx="35%" cy="35%"><stop offset="0%" stop-color="#ff8080"/><stop offset="100%" stop-color="#7a1010"/></radialGradient>
-              </defs>
-              <rect width="400" height="280" fill="#0a0f0c"/>
-              <ellipse cx="200" cy="40" rx="180" ry="40" fill="#ffd60a" opacity="0.08"/>
-              <!-- table angle perspective -->
-              <polygon points="40,90 360,90 380,200 20,200" fill="url(#cw1)"/>
-              <polygon points="60,105 340,105 358,190 42,190" fill="url(#cf1)"/>
-              <!-- pockets -->
-              <ellipse cx="60" cy="105" rx="10" ry="5" fill="#000"/>
-              <ellipse cx="200" cy="100" rx="10" ry="4" fill="#000"/>
-              <ellipse cx="340" cy="105" rx="10" ry="5" fill="#000"/>
-              <ellipse cx="50" cy="190" rx="11" ry="6" fill="#000"/>
-              <ellipse cx="200" cy="195" rx="11" ry="5" fill="#000"/>
-              <ellipse cx="350" cy="190" rx="11" ry="6" fill="#000"/>
-              <!-- red balls triangle -->
-              <circle cx="240" cy="145" r="6" fill="url(#rb1)"/>
-              <circle cx="252" cy="138" r="6" fill="url(#rb1)"/>
-              <circle cx="252" cy="152" r="6" fill="url(#rb1)"/>
-              <circle cx="264" cy="131" r="6" fill="url(#rb1)"/>
-              <circle cx="264" cy="145" r="6" fill="url(#rb1)"/>
-              <circle cx="264" cy="159" r="6" fill="url(#rb1)"/>
-              <circle cx="276" cy="124" r="6" fill="url(#rb1)"/>
-              <circle cx="276" cy="138" r="6" fill="url(#rb1)"/>
-              <circle cx="276" cy="152" r="6" fill="url(#rb1)"/>
-              <circle cx="276" cy="166" r="6" fill="url(#rb1)"/>
-              <!-- white ball -->
-              <circle cx="140" cy="145" r="6" fill="#fff"/>
-              <!-- legs -->
-              <rect x="40" y="195" width="22" height="60" fill="#3a2410"/>
-              <rect x="338" y="195" width="22" height="60" fill="#3a2410"/>
-              <ellipse cx="200" cy="265" rx="160" ry="8" fill="#39ff14" opacity="0.2"/>
-            </svg>
+          <div class="cat-image-real">
+            <img src="https://images.unsplash.com/photo-1574079437995-d2c107c47b71?auto=format&fit=crop&w=600&q=80" alt="שולחנות סנוקר" loading="lazy" />
+            <div class="cat-image-fallback"></div>
           </div>
           <div class="cat-info">
             <h3>שולחנות סנוקר</h3>
@@ -127,38 +88,9 @@
         </a>
 
         <a href="tables.html" class="cat-card">
-          <div class="cat-image">
-            <svg width="100%" height="100%" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice">
-              <defs>
-                <radialGradient id="cf2" cx="50%" cy="50%" r="70%"><stop offset="0%" stop-color="#1a8a5a"/><stop offset="100%" stop-color="#062a18"/></radialGradient>
-                <linearGradient id="cw2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#8a5a30"/><stop offset="100%" stop-color="#2a1810"/></linearGradient>
-              </defs>
-              <rect width="400" height="280" fill="#0a0f0c"/>
-              <ellipse cx="200" cy="40" rx="180" ry="40" fill="#ffd60a" opacity="0.08"/>
-              <polygon points="40,90 360,90 380,200 20,200" fill="url(#cw2)"/>
-              <polygon points="60,105 340,105 358,190 42,190" fill="url(#cf2)"/>
-              <ellipse cx="60" cy="105" rx="10" ry="5" fill="#000"/>
-              <ellipse cx="340" cy="105" rx="10" ry="5" fill="#000"/>
-              <ellipse cx="50" cy="190" rx="11" ry="6" fill="#000"/>
-              <ellipse cx="350" cy="190" rx="11" ry="6" fill="#000"/>
-              <!-- pool 8 rack -->
-              <g transform="translate(240, 148)">
-                <circle cx="0" cy="0" r="6" fill="#ffd60a"/>
-                <circle cx="13" cy="-7" r="6" fill="#3aa3ff"/>
-                <circle cx="13" cy="7" r="6" fill="#aa3a3a"/>
-                <circle cx="26" cy="-14" r="6" fill="#7a3a99"/>
-                <circle cx="26" cy="0" r="6" fill="#000"/>
-                <circle cx="26" cy="14" r="6" fill="#ff9a3c"/>
-                <circle cx="39" cy="-21" r="6" fill="#3a8f3a"/>
-                <circle cx="39" cy="-7" r="6" fill="#aa3a3a"/>
-                <circle cx="39" cy="7" r="6" fill="#ffd60a"/>
-                <circle cx="39" cy="21" r="6" fill="#7a3a99"/>
-              </g>
-              <circle cx="140" cy="148" r="6" fill="#fff"/>
-              <rect x="40" y="195" width="22" height="60" fill="#3a2410"/>
-              <rect x="338" y="195" width="22" height="60" fill="#3a2410"/>
-              <ellipse cx="200" cy="265" rx="160" ry="8" fill="#39ff14" opacity="0.2"/>
-            </svg>
+          <div class="cat-image-real">
+            <img src="https://images.unsplash.com/photo-1551888437-ce26d56e2cf2?auto=format&fit=crop&w=600&q=80" alt="שולחנות פול" loading="lazy" />
+            <div class="cat-image-fallback"></div>
           </div>
           <div class="cat-info">
             <h3>שולחנות פול</h3>
@@ -168,30 +100,9 @@
         </a>
 
         <a href="shop.html#cues" class="cat-card">
-          <div class="cat-image">
-            <svg width="100%" height="100%" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice">
-              <defs>
-                <linearGradient id="cuec1" x1="0%" x2="100%"><stop offset="0%" stop-color="#3aa3ff"/><stop offset="3%" stop-color="#fff"/><stop offset="10%" stop-color="#d4af37"/><stop offset="50%" stop-color="#7a5a20"/><stop offset="100%" stop-color="#1a0f08"/></linearGradient>
-                <linearGradient id="cuec2" x1="0%" x2="100%"><stop offset="0%" stop-color="#3aa3ff"/><stop offset="3%" stop-color="#fff"/><stop offset="10%" stop-color="#aa3a3a"/><stop offset="50%" stop-color="#5a1a1a"/><stop offset="100%" stop-color="#1a0a08"/></linearGradient>
-                <linearGradient id="cuec3" x1="0%" x2="100%"><stop offset="0%" stop-color="#3aa3ff"/><stop offset="3%" stop-color="#fff"/><stop offset="10%" stop-color="#3a3aaa"/><stop offset="50%" stop-color="#1a1a5a"/><stop offset="100%" stop-color="#0a0a2a"/></linearGradient>
-              </defs>
-              <rect width="400" height="280" fill="#0a0f0c"/>
-              <ellipse cx="200" cy="40" rx="180" ry="40" fill="#ffd60a" opacity="0.05"/>
-              <!-- 3 cues stacked -->
-              <line x1="40" y1="100" x2="360" y2="105" stroke="url(#cuec1)" stroke-width="14" stroke-linecap="round"/>
-              <rect x="260" y="93" width="50" height="14" fill="#1a1208" rx="3"/>
-              <text x="285" y="103" text-anchor="middle" fill="#d4af37" font-size="7" font-weight="900">STAR</text>
-
-              <line x1="40" y1="145" x2="360" y2="150" stroke="url(#cuec2)" stroke-width="14" stroke-linecap="round"/>
-              <rect x="260" y="138" width="50" height="14" fill="#fff" rx="3"/>
-              <text x="285" y="148" text-anchor="middle" fill="#aa3a3a" font-size="7" font-weight="900">PRO</text>
-
-              <line x1="40" y1="190" x2="360" y2="195" stroke="url(#cuec3)" stroke-width="14" stroke-linecap="round"/>
-              <rect x="260" y="183" width="50" height="14" fill="#d4af37" rx="3"/>
-              <text x="285" y="193" text-anchor="middle" fill="#0a0a2a" font-size="7" font-weight="900">CARBON</text>
-
-              <ellipse cx="200" cy="240" rx="160" ry="8" fill="#39ff14" opacity="0.2"/>
-            </svg>
+          <div class="cat-image-real">
+            <img src="https://images.unsplash.com/photo-1611159963037-95acb6e9c8aa?auto=format&fit=crop&w=600&q=80" alt="מקלות מקצועיים" loading="lazy" />
+            <div class="cat-image-fallback"></div>
           </div>
           <div class="cat-info">
             <h3>מקלות מקצועיים</h3>
@@ -201,44 +112,9 @@
         </a>
 
         <a href="shop.html" class="cat-card">
-          <div class="cat-image">
-            <svg width="100%" height="100%" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice">
-              <defs>
-                <radialGradient id="ab1" cx="35%" cy="35%"><stop offset="0%" stop-color="#ffee70"/><stop offset="100%" stop-color="#aa8800"/></radialGradient>
-                <radialGradient id="ab2" cx="35%" cy="35%"><stop offset="0%" stop-color="#3aa3ff"/><stop offset="100%" stop-color="#102055"/></radialGradient>
-                <radialGradient id="ab3" cx="35%" cy="35%"><stop offset="0%" stop-color="#ff5050"/><stop offset="100%" stop-color="#7a1010"/></radialGradient>
-                <radialGradient id="ab4" cx="35%" cy="35%"><stop offset="0%" stop-color="#aa70ff"/><stop offset="100%" stop-color="#2a0a55"/></radialGradient>
-                <radialGradient id="ab5" cx="35%" cy="35%"><stop offset="0%" stop-color="#4aff7a"/><stop offset="100%" stop-color="#0a4a1a"/></radialGradient>
-                <radialGradient id="ab6" cx="35%" cy="35%"><stop offset="0%" stop-color="#444"/><stop offset="100%" stop-color="#000"/></radialGradient>
-              </defs>
-              <rect width="400" height="280" fill="#0a0f0c"/>
-              <ellipse cx="200" cy="40" rx="180" ry="40" fill="#ffd60a" opacity="0.06"/>
-              <!-- chalk box -->
-              <rect x="40" y="100" width="80" height="80" rx="4" fill="#3aa3ff" stroke="#fff" stroke-width="2"/>
-              <rect x="46" y="106" width="68" height="68" rx="2" fill="#1a6db0"/>
-              <text x="80" y="138" text-anchor="middle" fill="#fff" font-weight="900" font-size="11">MASTER</text>
-              <text x="80" y="155" text-anchor="middle" fill="#fff" font-size="8">CHALK</text>
-              <!-- balls -->
-              <circle cx="180" cy="130" r="20" fill="url(#ab1)"/>
-              <circle cx="175" cy="125" r="5" fill="rgba(255,255,255,0.4)"/>
-              <circle cx="225" cy="130" r="20" fill="url(#ab2)"/>
-              <circle cx="220" cy="125" r="5" fill="rgba(255,255,255,0.4)"/>
-              <circle cx="270" cy="130" r="20" fill="url(#ab3)"/>
-              <circle cx="265" cy="125" r="5" fill="rgba(255,255,255,0.4)"/>
-              <circle cx="315" cy="130" r="20" fill="url(#ab6)"/>
-              <circle cx="310" cy="125" r="5" fill="rgba(255,255,255,0.4)"/>
-              <circle cx="315" cy="130" r="7" fill="#fff"/>
-              <text x="315" y="134" text-anchor="middle" font-weight="900" font-size="9" fill="#000">8</text>
-              <!-- triangle bottom -->
-              <polygon points="200,200 280,200 240,160" fill="#3a2418" stroke="#d4af37" stroke-width="1.5" opacity="0.85"/>
-              <circle cx="240" cy="190" r="5" fill="url(#ab3)"/>
-              <circle cx="232" cy="180" r="5" fill="url(#ab3)"/>
-              <circle cx="248" cy="180" r="5" fill="url(#ab3)"/>
-              <circle cx="225" cy="170" r="5" fill="url(#ab3)"/>
-              <circle cx="240" cy="170" r="5" fill="url(#ab3)"/>
-              <circle cx="255" cy="170" r="5" fill="url(#ab3)"/>
-              <ellipse cx="200" cy="240" rx="160" ry="8" fill="#39ff14" opacity="0.2"/>
-            </svg>
+          <div class="cat-image-real">
+            <img src="https://images.unsplash.com/photo-1615722440048-da4fd9202894?auto=format&fit=crop&w=600&q=80" alt="אביזרים" loading="lazy" />
+            <div class="cat-image-fallback"></div>
           </div>
           <div class="cat-info">
             <h3>אביזרים</h3>
@@ -248,46 +124,9 @@
         </a>
 
         <a href="clubs.html" class="cat-card">
-          <div class="cat-image">
-            <svg width="100%" height="100%" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice">
-              <defs>
-                <radialGradient id="rmf" cx="50%" cy="50%" r="70%"><stop offset="0%" stop-color="#1a8a5a"/><stop offset="100%" stop-color="#062a18"/></radialGradient>
-                <linearGradient id="rmw" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#8a5a30"/><stop offset="100%" stop-color="#2a1810"/></linearGradient>
-                <linearGradient id="brick" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#5a2a18"/><stop offset="100%" stop-color="#1a0a05"/></linearGradient>
-              </defs>
-              <rect width="400" height="280" fill="url(#brick)"/>
-              <!-- brick pattern -->
-              <g opacity="0.3" stroke="#3a1a08" stroke-width="0.5">
-                <line x1="0" y1="40" x2="400" y2="40"/>
-                <line x1="0" y1="80" x2="400" y2="80"/>
-                <line x1="40" y1="0" x2="40" y2="40"/>
-                <line x1="120" y1="0" x2="120" y2="40"/>
-                <line x1="200" y1="0" x2="200" y2="40"/>
-                <line x1="280" y1="0" x2="280" y2="40"/>
-                <line x1="360" y1="0" x2="360" y2="40"/>
-                <line x1="0" y1="40" x2="0" y2="80"/>
-                <line x1="80" y1="40" x2="80" y2="80"/>
-                <line x1="160" y1="40" x2="160" y2="80"/>
-                <line x1="240" y1="40" x2="240" y2="80"/>
-                <line x1="320" y1="40" x2="320" y2="80"/>
-              </g>
-              <!-- hanging lamp -->
-              <line x1="200" y1="0" x2="200" y2="30" stroke="#222" stroke-width="2"/>
-              <ellipse cx="200" cy="40" rx="35" ry="15" fill="#3a2418"/>
-              <ellipse cx="200" cy="80" rx="120" ry="35" fill="#ffd60a" opacity="0.25"/>
-              <!-- table -->
-              <polygon points="40,140 360,140 380,235 20,235" fill="url(#rmw)"/>
-              <polygon points="60,155 340,155 358,225 42,225" fill="url(#rmf)"/>
-              <ellipse cx="60" cy="155" rx="10" ry="5" fill="#000"/>
-              <ellipse cx="340" cy="155" rx="10" ry="5" fill="#000"/>
-              <ellipse cx="50" cy="225" rx="11" ry="6" fill="#000"/>
-              <ellipse cx="350" cy="225" rx="11" ry="6" fill="#000"/>
-              <circle cx="180" cy="190" r="7" fill="#fff"/>
-              <circle cx="240" cy="190" r="7" fill="#000"/>
-              <rect x="40" y="230" width="22" height="40" fill="#1a0f08"/>
-              <rect x="338" y="230" width="22" height="40" fill="#1a0f08"/>
-              <ellipse cx="200" cy="275" rx="160" ry="6" fill="#39ff14" opacity="0.15"/>
-            </svg>
+          <div class="cat-image-real">
+            <img src="https://images.unsplash.com/photo-1517232115160-ff93364542dd?auto=format&fit=crop&w=600&q=80" alt="חדרי משחק" loading="lazy" />
+            <div class="cat-image-fallback"></div>
           </div>
           <div class="cat-info">
             <h3>חדרי משחק</h3>
@@ -307,56 +146,41 @@
           <div class="trust-icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15 8 22 9 17 14 18 21 12 18 6 21 7 14 2 9 9 8 12 2"/></svg>
           </div>
-          <div>
-            <h4>איכות פרימיום</h4>
-            <p>רק החומרים הטובים</p>
-          </div>
+          <div><h4>איכות פרימיום</h4><p>רק החומרים הטובים</p></div>
         </div>
         <div class="trust-divider"></div>
         <div class="trust-item">
           <div class="trust-icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
           </div>
-          <div>
-            <h4>זכיין רשמי STAR</h4>
-            <p>בלעדי בישראל</p>
-          </div>
+          <div><h4>זכיין רשמי STAR</h4><p>בלעדי בישראל</p></div>
         </div>
         <div class="trust-divider"></div>
         <div class="trust-item">
           <div class="trust-icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
           </div>
-          <div>
-            <h4>משלוח והתקנה</h4>
-            <p>בכל הארץ</p>
-          </div>
+          <div><h4>משלוח והתקנה</h4><p>בכל הארץ</p></div>
         </div>
         <div class="trust-divider"></div>
         <div class="trust-item">
           <div class="trust-icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0118 0v6"/><path d="M21 19a2 2 0 01-2 2h-1v-4h3v2zM3 19a2 2 0 002 2h1v-4H3v2z"/></svg>
           </div>
-          <div>
-            <h4>ייעוץ מומחים</h4>
-            <p>שירות אישי</p>
-          </div>
+          <div><h4>ייעוץ מומחים</h4><p>שירות אישי</p></div>
         </div>
         <div class="trust-divider"></div>
         <div class="trust-item">
           <div class="trust-icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
           </div>
-          <div>
-            <h4>אחריות מלאה</h4>
-            <p>10 שנים על שולחנות</p>
-          </div>
+          <div><h4>אחריות מלאה</h4><p>10 שנים על שולחנות</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT SECTION with stats overlay -->
+  <!-- ABOUT with REAL image + stats overlay -->
   <section class="about-pro">
     <div class="container">
       <div class="about-grid reveal">
@@ -365,74 +189,18 @@
           <h2>היעד <span class="text-neon">האולטימטיבי</span><br>שלך לציוד <span class="text-gold">ביליארד</span></h2>
           <p>אנחנו זכיין הבלעדי של <strong style="color: var(--white);">STAR (Xingpai)</strong> — הספק הרשמי של אליפויות World Snooker. המשימה שלנו: להביא את האיכות הגבוהה ביותר ואת השירות המקצועי ביותר לשחקנים, מועדונים ובתים פרטיים בכל הארץ.</p>
           <p>25 שנים של ניסיון, אהבה לסנוקר ושני מועדונים פעילים בחדרה ובנימינה — אנחנו לא רק מוכרים ציוד, אנחנו חיים את המשחק.</p>
-          <a href="about.html" class="btn btn-outline" style="margin-top: 1.5rem;">קרא את הסיפור המלא ←</a>
+          <a href="about.html" class="btn btn-outline" style="margin-top: 1.5rem;">קרא עוד ←</a>
         </div>
         <div class="about-visual">
-          <div class="about-image-wrap">
-            <svg width="100%" height="100%" viewBox="0 0 500 400" preserveAspectRatio="xMidYMid slice">
-              <defs>
-                <radialGradient id="abf" cx="50%" cy="50%" r="70%"><stop offset="0%" stop-color="#1a8a5a"/><stop offset="100%" stop-color="#062a18"/></radialGradient>
-                <linearGradient id="abw" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#8a5a30"/><stop offset="100%" stop-color="#2a1810"/></linearGradient>
-                <linearGradient id="abbrick" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#5a2a18"/><stop offset="100%" stop-color="#1a0a05"/></linearGradient>
-              </defs>
-              <!-- Brick wall background -->
-              <rect width="500" height="400" fill="url(#abbrick)"/>
-              <g opacity="0.4" stroke="#3a1a08" stroke-width="0.6">
-                <line x1="0" y1="40" x2="500" y2="40"/>
-                <line x1="0" y1="80" x2="500" y2="80"/>
-                <line x1="0" y1="120" x2="500" y2="120"/>
-                <line x1="0" y1="160" x2="500" y2="160"/>
-                <line x1="50" y1="0" x2="50" y2="40"/>
-                <line x1="150" y1="0" x2="150" y2="40"/>
-                <line x1="250" y1="0" x2="250" y2="40"/>
-                <line x1="350" y1="0" x2="350" y2="40"/>
-                <line x1="450" y1="0" x2="450" y2="40"/>
-                <line x1="100" y1="40" x2="100" y2="80"/>
-                <line x1="200" y1="40" x2="200" y2="80"/>
-                <line x1="300" y1="40" x2="300" y2="80"/>
-                <line x1="400" y1="40" x2="400" y2="80"/>
-                <line x1="50" y1="80" x2="50" y2="120"/>
-                <line x1="150" y1="80" x2="150" y2="120"/>
-                <line x1="250" y1="80" x2="250" y2="120"/>
-                <line x1="350" y1="80" x2="350" y2="120"/>
-                <line x1="450" y1="80" x2="450" y2="120"/>
-              </g>
-              <!-- Hanging lamp -->
-              <line x1="250" y1="0" x2="250" y2="40" stroke="#222" stroke-width="2"/>
-              <ellipse cx="250" cy="50" rx="40" ry="18" fill="#3a2418" stroke="#5a3a18" stroke-width="1"/>
-              <ellipse cx="250" cy="110" rx="150" ry="50" fill="#ffd60a" opacity="0.25"/>
-              <!-- POOL BAR sign on wall -->
-              <rect x="180" y="120" width="140" height="60" rx="5" fill="#0a3018" stroke="#39ff14" stroke-width="1.5"/>
-              <text x="250" y="148" text-anchor="middle" fill="#39ff14" font-family="Rubik" font-weight="900" font-size="18">POOL BAR</text>
-              <text x="250" y="166" text-anchor="middle" fill="#fff" font-size="9" letter-spacing="0.15em">BILLIARD &amp; BOWLING</text>
-              <!-- Pool table -->
-              <polygon points="60,220 440,220 460,360 40,360" fill="url(#abw)"/>
-              <polygon points="80,240 420,240 438,345 62,345" fill="url(#abf)"/>
-              <!-- pockets -->
-              <ellipse cx="80" cy="240" rx="11" ry="5" fill="#000"/>
-              <ellipse cx="250" cy="235" rx="12" ry="4" fill="#000"/>
-              <ellipse cx="420" cy="240" rx="11" ry="5" fill="#000"/>
-              <ellipse cx="70" cy="345" rx="12" ry="6" fill="#000"/>
-              <ellipse cx="250" cy="350" rx="13" ry="5" fill="#000"/>
-              <ellipse cx="430" cy="345" rx="12" ry="6" fill="#000"/>
-              <!-- Balls -->
-              <circle cx="180" cy="290" r="9" fill="#fff"/>
-              <circle cx="320" cy="285" r="9" fill="#ffd60a"/>
-              <circle cx="335" cy="295" r="9" fill="#aa3a3a"/>
-              <circle cx="350" cy="280" r="9" fill="#3aa3ff"/>
-              <circle cx="350" cy="305" r="9" fill="#000"/>
-              <circle cx="365" cy="290" r="9" fill="#7a3a99"/>
-              <!-- Legs -->
-              <rect x="50" y="355" width="25" height="45" fill="#1a0f08"/>
-              <rect x="425" y="355" width="25" height="45" fill="#1a0f08"/>
-              <ellipse cx="250" cy="395" rx="200" ry="8" fill="#39ff14" opacity="0.25"/>
-            </svg>
+          <div class="about-image-real">
+            <img src="https://images.unsplash.com/photo-1606503153255-59d8b8b82176?auto=format&fit=crop&w=1000&q=80" alt="חדר סנוקר POOL BAR" loading="lazy" />
+            <div class="about-image-fallback"></div>
+            <div class="about-image-glow"></div>
           </div>
-          <!-- Stats overlay -->
           <div class="about-stats">
             <div class="about-stat">
               <div class="about-stat-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
               </div>
               <div><strong data-counter="1000">1000+</strong><span>לקוחות מרוצים</span></div>
             </div>
@@ -472,7 +240,7 @@
     </div>
   </div>
 
-  <!-- CLUBS SECTION -->
+  <!-- CLUBS SECTION with REAL images -->
   <section style="padding: 6rem 0;">
     <div class="container">
       <div class="section-header reveal">
@@ -482,52 +250,9 @@
       </div>
       <div class="clubs-grid">
         <div class="club-pro-card reveal">
-          <div class="club-pro-visual">
-            <svg width="100%" height="100%" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
-              <defs>
-                <radialGradient id="hf" cx="50%" cy="50%" r="70%"><stop offset="0%" stop-color="#1a8a5a"/><stop offset="100%" stop-color="#062a18"/></radialGradient>
-                <linearGradient id="hbrick" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#5a2a18"/><stop offset="100%" stop-color="#1a0a05"/></linearGradient>
-              </defs>
-              <rect width="600" height="400" fill="url(#hbrick)"/>
-              <g opacity="0.3" stroke="#3a1a08" stroke-width="0.6">
-                <line x1="0" y1="50" x2="600" y2="50"/>
-                <line x1="0" y1="100" x2="600" y2="100"/>
-                <line x1="0" y1="150" x2="600" y2="150"/>
-                <line x1="60" y1="0" x2="60" y2="50"/>
-                <line x1="180" y1="0" x2="180" y2="50"/>
-                <line x1="300" y1="0" x2="300" y2="50"/>
-                <line x1="420" y1="0" x2="420" y2="50"/>
-                <line x1="540" y1="0" x2="540" y2="50"/>
-              </g>
-              <!-- 2 hanging lamps -->
-              <line x1="200" y1="0" x2="200" y2="40" stroke="#222"/>
-              <ellipse cx="200" cy="50" rx="35" ry="15" fill="#3a2418"/>
-              <ellipse cx="200" cy="120" rx="120" ry="40" fill="#ffd60a" opacity="0.25"/>
-              <line x1="400" y1="0" x2="400" y2="40" stroke="#222"/>
-              <ellipse cx="400" cy="50" rx="35" ry="15" fill="#3a2418"/>
-              <ellipse cx="400" cy="120" rx="120" ry="40" fill="#ffd60a" opacity="0.25"/>
-              <!-- Big table -->
-              <polygon points="60,200 540,200 580,360 20,360" fill="#3a2410" stroke="#d4af37" stroke-width="1" stroke-opacity="0.4"/>
-              <polygon points="90,220 510,220 545,345 55,345" fill="url(#hf)"/>
-              <ellipse cx="90" cy="220" rx="13" ry="6" fill="#000"/>
-              <ellipse cx="300" cy="215" rx="14" ry="5" fill="#000"/>
-              <ellipse cx="510" cy="220" rx="13" ry="6" fill="#000"/>
-              <ellipse cx="80" cy="345" rx="14" ry="7" fill="#000"/>
-              <ellipse cx="300" cy="350" rx="15" ry="6" fill="#000"/>
-              <ellipse cx="520" cy="345" rx="14" ry="7" fill="#000"/>
-              <!-- red ball triangle -->
-              <g transform="translate(380, 280)">
-                <circle cx="0" cy="0" r="8" fill="#aa2020"/>
-                <circle cx="16" cy="-9" r="8" fill="#aa2020"/>
-                <circle cx="16" cy="9" r="8" fill="#aa2020"/>
-                <circle cx="32" cy="-18" r="8" fill="#aa2020"/>
-                <circle cx="32" cy="0" r="8" fill="#aa2020"/>
-                <circle cx="32" cy="18" r="8" fill="#aa2020"/>
-              </g>
-              <circle cx="200" cy="280" r="8" fill="#fff"/>
-              <rect x="40" y="355" width="30" height="50" fill="#1a0f08"/>
-              <rect x="530" y="355" width="30" height="50" fill="#1a0f08"/>
-            </svg>
+          <div class="club-pro-visual-real">
+            <img src="https://images.unsplash.com/photo-1517232115160-ff93364542dd?auto=format&fit=crop&w=900&q=80" alt="פול בר חדרה" loading="lazy" />
+            <div class="club-image-fallback"></div>
           </div>
           <div class="club-pro-info">
             <span class="city">חדרה · הסניף הראשי</span>
@@ -547,43 +272,9 @@
         </div>
 
         <div class="club-pro-card reveal">
-          <div class="club-pro-visual">
-            <svg width="100%" height="100%" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
-              <defs>
-                <radialGradient id="bf" cx="50%" cy="50%" r="70%"><stop offset="0%" stop-color="#1a8a5a"/><stop offset="100%" stop-color="#062a18"/></radialGradient>
-                <linearGradient id="bbrick" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#3a1a08"/><stop offset="100%" stop-color="#0a0500"/></linearGradient>
-              </defs>
-              <rect width="600" height="400" fill="url(#bbrick)"/>
-              <!-- ambient -->
-              <ellipse cx="300" cy="80" rx="280" ry="60" fill="#39ff14" opacity="0.1"/>
-              <line x1="150" y1="0" x2="150" y2="35" stroke="#222"/>
-              <ellipse cx="150" cy="45" rx="30" ry="12" fill="#3a2418"/>
-              <ellipse cx="150" cy="100" rx="90" ry="30" fill="#ffd60a" opacity="0.2"/>
-              <line x1="450" y1="0" x2="450" y2="35" stroke="#222"/>
-              <ellipse cx="450" cy="45" rx="30" ry="12" fill="#3a2418"/>
-              <ellipse cx="450" cy="100" rx="90" ry="30" fill="#ffd60a" opacity="0.2"/>
-              <!-- Table -->
-              <polygon points="60,200 540,200 580,360 20,360" fill="#3a2410" stroke="#d4af37" stroke-width="1" stroke-opacity="0.4"/>
-              <polygon points="90,220 510,220 545,345 55,345" fill="url(#bf)"/>
-              <ellipse cx="90" cy="220" rx="13" ry="6" fill="#000"/>
-              <ellipse cx="300" cy="215" rx="14" ry="5" fill="#000"/>
-              <ellipse cx="510" cy="220" rx="13" ry="6" fill="#000"/>
-              <ellipse cx="80" cy="345" rx="14" ry="7" fill="#000"/>
-              <ellipse cx="300" cy="350" rx="15" ry="6" fill="#000"/>
-              <ellipse cx="520" cy="345" rx="14" ry="7" fill="#000"/>
-              <!-- pool rack -->
-              <g transform="translate(360, 280)">
-                <circle cx="0" cy="0" r="9" fill="#ffd60a"/>
-                <circle cx="18" cy="-10" r="9" fill="#3aa3ff"/>
-                <circle cx="18" cy="10" r="9" fill="#aa3a3a"/>
-                <circle cx="36" cy="-20" r="9" fill="#7a3a99"/>
-                <circle cx="36" cy="0" r="9" fill="#000"/>
-                <circle cx="36" cy="20" r="9" fill="#ff9a3c"/>
-              </g>
-              <circle cx="180" cy="280" r="9" fill="#fff"/>
-              <rect x="40" y="355" width="30" height="50" fill="#1a0f08"/>
-              <rect x="530" y="355" width="30" height="50" fill="#1a0f08"/>
-            </svg>
+          <div class="club-pro-visual-real">
+            <img src="https://images.unsplash.com/photo-1518604200953-2b9f3e6e8e9b?auto=format&fit=crop&w=900&q=80" alt="פול בר בנימינה" loading="lazy" />
+            <div class="club-image-fallback"></div>
           </div>
           <div class="club-pro-info">
             <span class="city">בנימינה · יוקרתי</span>
@@ -626,13 +317,10 @@
       <div class="footer-grid">
         <div>
           <img src="assets/logo.svg" alt="פול בר" class="footer-logo" />
-          <p style="color: var(--text-muted); margin-top: 1rem; max-width: 320px;">
-            הכתובת המובילה בישראל לציוד סנוקר ושולחנות טורניר מקצועיים. זכיין רשמי של STAR (Xingpai).
-          </p>
+          <p style="color: var(--text-muted); margin-top: 1rem; max-width: 320px;">הכתובת המובילה בישראל לציוד סנוקר ושולחנות טורניר מקצועיים. זכיין רשמי של STAR (Xingpai).</p>
           <div class="social-links">
             <a href="#" aria-label="Instagram"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
             <a href="#" aria-label="Facebook"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M14 13.5h2.5l1-4H14v-2c0-1 .5-2 2-2h1.5V2.1A26.5 26.5 0 0015.1 2C12.5 2 10 3.5 10 6.5v3H7v4h3V22h4v-8.5z"/></svg></a>
-            <a href="#" aria-label="TikTok"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M19.5 6.5a5.5 5.5 0 01-3.5-1.2v9a5.5 5.5 0 11-5.5-5.5c.3 0 .6 0 1 .1v3a2.5 2.5 0 102 2.4V2h3a3.5 3.5 0 003 3.5z"/></svg></a>
             <a href="https://wa.me/972529008202" aria-label="WhatsApp"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 1.7.4 3.3 1.2 4.7L2 22l5.4-1.4A10 10 0 1012 2zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.3-.5.1-1.1.1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.2.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2c.1.2.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l.8-1c.2-.2.4-.2.6-.1l1.9.9c.3.2.5.2.6.4.1.2.1.9-.2 1.5z"/></svg></a>
           </div>
         </div>
@@ -651,10 +339,9 @@
           <h4>קטגוריות</h4>
           <ul>
             <li><a href="tables.html">שולחנות סנוקר</a></li>
-            <li><a href="shop.html#cues">מקלות מקצועיים</a></li>
-            <li><a href="shop.html#balls">סטי כדורים</a></li>
-            <li><a href="shop.html#chalk">גירים ואביזרים</a></li>
-            <li><a href="contact.html">התקנה והובלה</a></li>
+            <li><a href="shop.html#cues">מקלות</a></li>
+            <li><a href="shop.html#balls">כדורים</a></li>
+            <li><a href="shop.html#chalk">גירים</a></li>
           </ul>
         </div>
         <div>
@@ -667,9 +354,7 @@
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; <span id="year">2026</span> פול בר. כל הזכויות שמורות. · זכיין רשמי של STAR (Xingpai) בישראל.</p>
-      </div>
+      <div class="footer-bottom"><p>&copy; <span id="year">2026</span> פול בר. כל הזכויות שמורות. · זכיין רשמי של STAR (Xingpai) בישראל.</p></div>
     </div>
   </footer>
 
